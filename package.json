@@ -1,0 +1,22 @@
+{
+  "name": "audetpascale",
+  "private": true,
+  "author": "Pascale Audet",
+  "engines": {
+    "npm": "7.13.0",
+    "node": "16.2.0"
+  },
+  "workspaces": [
+    "common",
+    "tech-n-app",
+    "utils"
+  ],
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
+  },
+  "lint-staged": {
+    "*": "prettier --write . --ignore-path .prettierignore"
+  }
+}

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generate NotFound 1`] = `
+<div
+  className="css-19gncej-NotFound"
+>
+  <div
+    className="css-1yrmf69"
+  >
+    <h1
+      className="css-1wf7gym"
+    >
+      404 Fichier introuvable
+    </h1>
+    <span
+      className="css-7axmvo-NotFound"
+    >
+      Je suis désolée,
+       
+      <span
+        aria-label="sleeping emoji"
+        role="img"
+      >
+        😔💤
+      </span>
+       
+      je
+       
+      <big>
+        <i>
+          take a nap
+        </i>
+      </big>
+      .
+    </span>
+    <span
+      className="css-flryfv-NotFound"
+    >
+      <a
+        aria-current="page"
+        className="css-12xwyx6-NotFound"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        style={Object {}}
+      >
+        Accueil
+      </a>
+    </span>
+  </div>
+</div>
+`;

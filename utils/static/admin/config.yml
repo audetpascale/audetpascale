@@ -1,0 +1,11 @@
+backend:
+  name: github
+  repo: audetpascale/utils
+  branch: main
+
+site_url: https://audetpascale.com
+
+media_folder: static/img
+public_folder: /img
+
+collections:

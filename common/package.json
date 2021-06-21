@@ -1,0 +1,28 @@
+{
+  "name": "@audetpascale/common",
+  "version": "1.0.2",
+  "private": true,
+  "author": "Pascale Audet",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@theme-ui/presets": "^0.10.0",
+    "babel-jest": "^27.0.2",
+    "babel-preset-gatsby": "^1.7.1",
+    "gatsby": "^3.6.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.4",
+    "react": "^17.0.1",
+    "react-test-renderer": "*",
+    "theme-ui": "^0.10.0"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
