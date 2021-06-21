@@ -2,10 +2,6 @@
   "name": "audetpascale",
   "private": true,
   "author": "Pascale Audet",
-  "engines": {
-    "npm": "7.13.0",
-    "node": "16.2.0"
-  },
   "workspaces": [
     "common",
     "tech-n-app",
