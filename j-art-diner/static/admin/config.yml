@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: audetpascale/utils
+  repo: audetpascale/j-art-diner
   branch: main
 
-site_url: https://audetpascale.com
+site_url: https://j-art-diner.audetpascale.com
 
 media_folder: static/img
 public_folder: /img

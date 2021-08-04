@@ -2,7 +2,7 @@
   "name": "j-art-diner",
   "version": "1.0.0",
   "private": true,
-  "description": "j-art-diner",
+  "description": "J'Art diner",
   "author": "Pascale Audet",
   "keywords": [
     "gatsby"
@@ -28,7 +28,6 @@
     "gatsby-plugin-sharp": "^3.7.1",
     "gatsby-plugin-sitemap": "^4.3.1",
     "gatsby-plugin-theme-ui": "^0.9.1",
-    "gatsby-plugin-well-known": "^1.0.0",
     "gatsby-source-filesystem": "^3.7.1",
     "gatsby-transformer-sharp": "^3.7.1",
     "netlify-cms-app": "^2.15.19",

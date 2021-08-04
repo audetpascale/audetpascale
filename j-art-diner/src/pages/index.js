@@ -1,19 +1,17 @@
-import { Container } from "theme-ui";
+import {Container, Heading, Text} from "theme-ui";
 import Layout from "../components/Layout";
 import { Provider } from "react-redux";
 import React from "react";
 import store from "../store";
-import Convert from "../components/convert/Convert";
-import Replace from "../components/replace/Replace";
+import {graphql} from "gatsby";
 
-const IndexPage = () => {
+const IndexPage = (props) => {
   return (
     <Provider store={store}>
-      <Layout title="Utilitaire">
+      <Layout>
         <Container variant="main">
-          <h1>Utilitaire</h1>
-          <Convert />
-          <Replace />
+            <Heading as="h1">{props.data.site.siteMetadata.title}</Heading>
+            <Text>{props.data.site.siteMetadata.description}</Text>
         </Container>
       </Layout>
     </Provider>
@@ -21,3 +19,18 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+IndexPage.propTypes = {
+    data: PropTypes.object,
+};
+
+export const pageQuery = graphql`
+  query IndexQuery($id: String!) {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`;

@@ -19,9 +19,6 @@ const Header = () => {
               />
               Accueil
             </NavLink>
-            <NavLink href="https://tech-n-app.audetpascale.com/" px={4}>
-              Tech 'n' App
-            </NavLink>
           </Flex>
         </Container>
       </nav>
