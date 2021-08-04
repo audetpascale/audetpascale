@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: audetpascale.com
+Token: 11ff273aa2c46ae86113250122158bde5356e56926f45d2e7a04bd45f0d0c9fe
