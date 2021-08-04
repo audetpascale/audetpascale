@@ -1,8 +1,8 @@
 {
-  "name": "utils",
+  "name": "j-art-diner",
   "version": "1.0.0",
   "private": true,
-  "description": "utils",
+  "description": "j-art-diner",
   "author": "Pascale Audet",
   "keywords": [
     "gatsby"

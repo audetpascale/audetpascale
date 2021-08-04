@@ -4,6 +4,7 @@
   "author": "Pascale Audet",
   "workspaces": [
     "common",
+    "j-art-diner",
     "tech-n-app",
     "utils"
   ],
