@@ -1,9 +1,9 @@
 ---
 templateKey: blog-page
-title: Récolte
+title: Plan
 itemOrder: 1
 image: recolte.jpg
-description: Récolte
+description: Plan
 ---
 
 Void
