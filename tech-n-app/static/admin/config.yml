@@ -1,17 +1,17 @@
 backend:
   name: github
-  repo: audetpascale/tech-n-app
+  repo: audetpascale/audetpascale
   branch: main
 
 site_url: https://tech-n-app.audetpascale.com
 
-media_folder: static/img
+media_folder: tech-n-app/static/img
 public_folder: /img
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "src/pages/blog"
+    folder: "tech-n-app/src/pages/blog"
     create: true
     slug: "index"
     media_folder: ""
@@ -36,7 +36,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/index.md"
+      - file: "tech-n-app/src/pages/index.md"
         label: "Home"
         name: "index"
         fields:
@@ -49,7 +49,7 @@ collections:
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/about/index.md"
+      - file: "tech-n-app/src/pages/about/index.md"
         label: "About"
         name: "about"
         fields:
