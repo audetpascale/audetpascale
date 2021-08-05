@@ -9,7 +9,7 @@ import Replace from "../components/replace/Replace";
 const IndexPage = () => {
   return (
     <Provider store={store}>
-      <Layout title="Utilitaire">
+      <Layout>
         <Container variant="main">
           <h1>Utilitaire</h1>
           <Convert />

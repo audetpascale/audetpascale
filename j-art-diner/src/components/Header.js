@@ -3,7 +3,7 @@
 import { Container, Flex, jsx, NavLink } from "theme-ui";
 import { StaticImage } from "gatsby-plugin-image";
 
-const Header = () => {
+const Header = ({ items }) => {
   return (
     <header>
       <nav sx={{ backgroundColor: "muted" }}>
@@ -19,6 +19,11 @@ const Header = () => {
               />
               Accueil
             </NavLink>
+            {items.map(({ node: post }) => (
+              <NavLink key={post.id} href={post.fields.slug}>
+                {post.frontmatter.title}
+              </NavLink>
+            ))}
           </Flex>
         </Container>
       </nav>
@@ -27,5 +32,3 @@ const Header = () => {
 };
 
 export default Header;
-
-Header.propTypes = {};

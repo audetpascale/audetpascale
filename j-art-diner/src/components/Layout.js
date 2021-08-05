@@ -20,6 +20,22 @@ const Layout = ({ children, title, description, image, ogType }) => {
           twitterUsername
         }
       }
+      allMarkdownRemark(
+        filter: { frontmatter: { templateKey: { eq: "blog-page" } } }
+        sort: { order: ASC, fields: [frontmatter___itemOrder] }
+      ) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -61,7 +77,7 @@ const Layout = ({ children, title, description, image, ogType }) => {
         <meta name="twitter:description" content={seo.description} />
         <meta name="twitter:image" content={seo.image} />
       </Helmet>
-      <Header />
+      <Header items={defaultSiteMetadata.allMarkdownRemark.edges} />
       {children}
       <Footer
         author={defaultSiteMetadata.site.siteMetadata.author}
