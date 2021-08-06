@@ -3,7 +3,7 @@ templateKey: blog-page
 title: Récolte
 itemOrder: 1
 image: markus-spiske-4yk8idawnm8-unsplash.jpg
-description: Un bon aliment se distingue dans les arômes... mais quand sont-ils
+description: Un bon aliment se distingue par ses arômes... mais quand sont-ils
   plus présents?
 ---
 ## Règle générale
