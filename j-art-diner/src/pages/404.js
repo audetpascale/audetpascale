@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import NotFound from "@audetpascale/common";
+import { NotFound } from "@audetpascale/common";
 import React from "react";
 
 const NotFoundPage = () => {

@@ -2,7 +2,7 @@
 // noinspection ES6UnusedImports
 import { Container, Heading, Image, jsx, Text } from "theme-ui";
 import { getSrc } from "gatsby-plugin-image";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PropTypes from "prop-types";
 

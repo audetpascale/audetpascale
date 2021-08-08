@@ -1,10 +1,11 @@
-import Footer from "./Footer";
+import { Footer } from "@audetpascale/common";
 import { graphql, useStaticQuery } from "gatsby";
 import Header from "./Header";
 import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import React from "react";
 import PropTypes from "prop-types";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Layout = ({ children, title, description, image, ogType }) => {
   const defaultSiteMetadata = useStaticQuery(graphql`
@@ -82,6 +83,15 @@ const Layout = ({ children, title, description, image, ogType }) => {
       <Footer
         author={defaultSiteMetadata.site.siteMetadata.author}
         title={defaultSiteMetadata.site.siteMetadata.title}
+        image={
+          <StaticImage
+            alt="j-art-diner"
+            src="../images/icon.png"
+            width={20}
+            height={20}
+          />
+        }
+        year="2021"
       />
     </div>
   );

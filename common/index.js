@@ -1,3 +1,4 @@
+import Footer from "./src/components/Footer";
 import NotFound from "./src/components/NotFound";
 
-export default NotFound;
+export { Footer, NotFound };
