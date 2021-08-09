@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+import { Footer } from "@audetpascale/common";
 import { graphql, useStaticQuery } from "gatsby";
 import Header from "./Header";
 import { Helmet } from "react-helmet";

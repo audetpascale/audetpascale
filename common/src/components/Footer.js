@@ -2,7 +2,6 @@
 // noinspection ES6UnusedImports
 import { Container, jsx, Text } from "theme-ui";
 import PropTypes from "prop-types";
-import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = ({ author, title, image, year }) => {
   return (
