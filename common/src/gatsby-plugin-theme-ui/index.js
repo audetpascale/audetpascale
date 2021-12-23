@@ -1,9 +1,9 @@
-import { roboto } from "@theme-ui/presets";
+import { sketchy } from "@theme-ui/presets";
 
 const theme = {
-  ...roboto,
+  ...sketchy,
   images: {
-    ...roboto.images,
+    ...sketchy.images,
     heading: {
       objectFit: "cover",
       width: "100%",
@@ -13,7 +13,7 @@ const theme = {
     },
   },
   layout: {
-    ...roboto.layout,
+    ...sketchy.layout,
     container: {
       p: 3,
     },
@@ -23,11 +23,11 @@ const theme = {
     },
   },
   lineHeights: {
-    ...roboto.lineHeights,
+    ...sketchy.lineHeights,
     heading: 2,
   },
   sizes: {
-    ...roboto.sizes,
+    ...sketchy.sizes,
     container: 1024,
   },
 };

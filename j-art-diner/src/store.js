@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import convertReducer from "./components/convert/convertSlice";
+import rotateReducer from "./components/rotate/rotateSlice";
 
 export default configureStore({
   reducer: {
-    convert: convertReducer,
+    rotate: rotateReducer,
   },
 });

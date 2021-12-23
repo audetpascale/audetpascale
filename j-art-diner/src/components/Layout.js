@@ -77,6 +77,10 @@ const Layout = ({ children, title, description, image, ogType }) => {
         />
         <meta name="twitter:description" content={seo.description} />
         <meta name="twitter:image" content={seo.image} />
+        <link
+          href="https://fonts.googleapis.com/css?family=Architects+Daughter|Montserrat:400,700|Poppins:400,700,900|Roboto:400,600"
+          rel="stylesheet"
+        />
       </Helmet>
       <Header items={defaultSiteMetadata.allMarkdownRemark.edges} />
       {children}
