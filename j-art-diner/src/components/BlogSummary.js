@@ -1,8 +1,8 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import {Box, Container, Grid, Heading, jsx, Text} from "theme-ui";
-import {getSrc} from "gatsby-plugin-image";
-import {Link} from "gatsby";
+import { Box, Container, Grid, Heading, jsx, Text } from "theme-ui";
+import { getSrc } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 import PropTypes from "prop-types";
 
 const BlogSummary = ({ numChild, post }) => {
@@ -41,11 +41,7 @@ const BlogSummary = ({ numChild, post }) => {
 
   const elements = numChild % 2 ? [img, text] : [text, img];
 
-  return (
-    <Grid columns={2}>
-      {elements}
-    </Grid>
-  );
+  return <Grid columns={2}>{elements}</Grid>;
 };
 
 export default BlogSummary;

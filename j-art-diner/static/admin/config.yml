@@ -40,10 +40,10 @@ collections:
         name: "index"
         fields:
           - {
-            label: "Template Key",
-            name: "templateKey",
-            default: "index-page",
-          }
+              label: "Template Key",
+              name: "templateKey",
+              default: "index-page",
+            }
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -51,11 +51,7 @@ collections:
         label: "Data"
         name: "data"
         fields:
-          - {
-            label: "Template Key",
-            name: "templateKey",
-            default: "data-page",
-          }
+          - { label: "Template Key", name: "templateKey", default: "data-page" }
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
