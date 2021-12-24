@@ -7,7 +7,7 @@ const Bed = ({ bed, length }) => {
   const height = `${bed.length * 2}em`;
   return (
     <Box key={1} sx={{ height: height, lineHeight: height }}>
-      {bed.name} : {length * bed.length}
+      {bed.name} : {Math.round(length * bed.length)}
     </Box>
   );
 };

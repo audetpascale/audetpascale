@@ -1,7 +1,16 @@
 import BlogSummary from "../components/BlogSummary";
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Box, Card, Container, Divider, Grid, Heading, jsx, Text } from "theme-ui";
+import {
+  Box,
+  Card,
+  Container,
+  Divider,
+  Grid,
+  Heading,
+  jsx,
+  Text,
+} from "theme-ui";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PropTypes from "prop-types";
@@ -14,19 +23,19 @@ const IndexPage = (props) => {
       <Container>
         <Heading as="h1">{props.data.site.siteMetadata.title}</Heading>
         <Text>{props.data.site.siteMetadata.description}</Text>
-        <Grid columns={2}>
+        <Grid columns={[2, "1fr 2fr"]}>
           <Box>
             <svg
               viewBox="0 0 50 100"
-              sx={{ display: "inline-block", height: "100%", width: "50%" }}
+              style={{ display: "inline-block", height: "100%", width: "50%" }}
             >
               <circle cx="50" cy="50" r="50%" sx={{ fill: "primary" }} />
               <foreignObject
                 x="25%"
                 y="43%"
-                sx={{ height: "14%", textAlign: "right", width: "70%" }}
+                style={{ height: "14%", textAlign: "right", width: "70%" }}
               >
-                <Text as="h2" sx={{ fontSize: "5px" }}>
+                <Text as="h2" sx={{ fontSize: "5px" }} mx={0.5}>
                   {props.data.markdownRemark.frontmatter.heading}
                 </Text>
               </foreignObject>
@@ -39,9 +48,9 @@ const IndexPage = (props) => {
               <foreignObject
                 x="5%"
                 y="44%"
-                sx={{ height: "30%", textAlign: "left", width: "75%" }}
+                style={{ height: "30%", textAlign: "left", width: "75%" }}
               >
-                <Text as="h3" sx={{ fontSize: "5px" }}>
+                <Text as="h3" sx={{ fontSize: "5px" }} mx={0.5}>
                   {props.data.markdownRemark.frontmatter.subheading}
                 </Text>
               </foreignObject>

@@ -15,7 +15,7 @@ const IndexPage = (props) => {
       <Container>
         <Heading as="h1">{props.data.site.siteMetadata.title}</Heading>
         <Text>{props.data.site.siteMetadata.description}</Text>
-        <Grid columns={2}>
+        <Grid columns={[2, "1fr 2fr"]}>
           <Box>
             <svg
               viewBox="0 0 50 100"

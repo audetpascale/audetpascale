@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import {Container, Flex, jsx, NavLink} from "theme-ui";
-import {StaticImage} from "gatsby-plugin-image";
+import { Container, Flex, jsx, NavLink } from "theme-ui";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Header = ({ items }) => {
   return (
@@ -18,6 +18,9 @@ const Header = ({ items }) => {
                 height={48}
               />
               Accueil
+            </NavLink>
+            <NavLink href="/data" px={2}>
+              Données
             </NavLink>
             {items.map(({ node: post }) => (
               <NavLink key={post.id} href={post.fields.slug} px={2}>

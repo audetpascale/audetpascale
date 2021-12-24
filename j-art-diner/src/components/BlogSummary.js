@@ -42,7 +42,7 @@ const BlogSummary = ({ numChild, post }) => {
   const elements = numChild % 2 ? [img, text] : [text, img];
 
   return (
-    <Grid columns={2} width={256}>
+    <Grid columns={2}>
       {elements}
     </Grid>
   );
