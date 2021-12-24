@@ -1,11 +1,11 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Container, jsx } from "theme-ui";
+import {Container, jsx} from "theme-ui";
 import CropRotation from "../components/rotate/CropRotation";
-import { graphql } from "gatsby";
+import {graphql} from "gatsby";
 import Layout from "../components/Layout";
 import PropTypes from "prop-types";
-import { Provider } from "react-redux";
+import {Provider} from "react-redux";
 import React from "react";
 import store from "../store";
 

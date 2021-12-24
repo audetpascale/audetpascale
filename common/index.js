@@ -1,4 +1,4 @@
-import Footer from "./src/components/Footer";
-import NotFound from "./src/components/NotFound";
+import GenericLayout from "./src/components/GenericLayout";
+import GenericNotFound from "./src/components/GenericNotFound";
 
-export { Footer, NotFound };
+export { GenericLayout, GenericNotFound };

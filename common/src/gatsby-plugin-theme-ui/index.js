@@ -12,24 +12,6 @@ const theme = {
       m: "auto",
     },
   },
-  layout: {
-    ...sketchy.layout,
-    container: {
-      p: 3,
-    },
-    main: {
-      minHeight: "calc(100vh - 112px)",
-      p: 3,
-    },
-  },
-  lineHeights: {
-    ...sketchy.lineHeights,
-    heading: 2,
-  },
-  sizes: {
-    ...sketchy.sizes,
-    container: 1024,
-  },
 };
 
 export default theme;

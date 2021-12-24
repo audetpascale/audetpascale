@@ -2,10 +2,10 @@
 
 exports[`Generate NotFound 1`] = `
 <div
-  className="css-19gncej-NotFound"
+  className="css-nuebov-GenericNotFound"
 >
   <div
-    className="css-1yrmf69"
+    className="css-z0gdeh-GenericNotFound"
   >
     <h1
       className="css-1wf7gym"
@@ -13,7 +13,7 @@ exports[`Generate NotFound 1`] = `
       404 Fichier introuvable
     </h1>
     <span
-      className="css-7axmvo-NotFound"
+      className="css-zf5itg-GenericNotFound"
     >
       Je suis désolée,
        
@@ -34,19 +34,18 @@ exports[`Generate NotFound 1`] = `
       .
     </span>
     <span
-      className="css-flryfv-NotFound"
+      className="css-cjky94-GenericNotFound"
+    />
+    <a
+      aria-current="page"
+      className="css-ixjln1-GenericNotFound"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={Object {}}
     >
-      <a
-        aria-current="page"
-        className="css-12xwyx6-NotFound"
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        style={Object {}}
-      >
-        Accueil
-      </a>
-    </span>
+      Accueil
+    </a>
   </div>
 </div>
 `;

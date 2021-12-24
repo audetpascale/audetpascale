@@ -1,8 +1,8 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Box, Container, Grid, Heading, jsx, Text } from "theme-ui";
-import { getSrc } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+import {Box, Container, Grid, Heading, jsx, Text} from "theme-ui";
+import {getSrc} from "gatsby-plugin-image";
+import {Link} from "gatsby";
 import PropTypes from "prop-types";
 
 const BlogSummary = ({ numChild, post }) => {
@@ -31,7 +31,7 @@ const BlogSummary = ({ numChild, post }) => {
           <summary>{post.excerpt}</summary>
         </Text>
         <Text sx={{ textAlign: "right" }}>
-          <Link sx={{ color: "secondary" }} to={post.fields.slug}>
+          <Link sx={{ color: "primaryLight" }} to={post.fields.slug}>
             Lire →
           </Link>
         </Text>

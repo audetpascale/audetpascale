@@ -1,6 +1,6 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Box, Card, Grid, Heading, jsx } from "theme-ui";
+import {Box, Card, Grid, Heading, jsx} from "theme-ui";
 import PropTypes from "prop-types";
 import Bed from "./Bed";
 
@@ -16,7 +16,7 @@ const Plot = ({ plot }) => {
         textAlign: "center",
       }}
     >
-      <Card bg="secondary">
+      <Card>
         {plot.beds.first.map((bed, index) => (
           <Bed key={index} bed={bed} length={plot.length / 16} />
         ))}

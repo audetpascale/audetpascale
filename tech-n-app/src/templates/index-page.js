@@ -36,7 +36,7 @@ const IndexPage = (props) => {
               viewBox="0 0 50 100"
               style={{ display: "inline-block", height: "90%", width: "50%" }}
             >
-              <circle cx="0" cy="50" r="50%" sx={{ fill: "secondary" }} />
+              <circle cx="0" cy="50" r="50%" sx={{ fill: "primaryLight" }} />
               <foreignObject
                 x="5%"
                 y="44%"

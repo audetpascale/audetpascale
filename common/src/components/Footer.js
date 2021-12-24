@@ -1,22 +1,31 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Container, jsx, Text } from "theme-ui";
+import { jsx, Text } from "theme-ui";
 import PropTypes from "prop-types";
+import React from "react";
 
-const Footer = ({ author, title, image, year }) => {
+const Footer = ({ author, image, title, year }) => {
   return (
-    <footer sx={{ backgroundColor: "muted" }}>
-      <Container>
-        <Text>
-          © {year} - {new Date().getFullYear()} {author}.
-          <span sx={{ float: "right" }}>
-            {image}
-            {title} est propulsé par{" "}
-            <a href="https://www.gatsbyjs.com/">Gatsby</a> et{" "}
-            <a href="https://www.netlify.com/">Netlify</a>.
-          </span>
-        </Text>
-      </Container>
+    <footer
+      sx={{
+        alignItems: "center",
+        display: "flex",
+        flexWrap: "wrap",
+        m: "auto",
+        p: 2,
+        variant: "styles.footer",
+        width: 1024,
+      }}
+    >
+      <Text>
+        © {year} - {new Date().getFullYear()} {author}.
+      </Text>
+      <div sx={{ mx: "auto" }} />
+      {image}
+      <Text>
+        {title} est propulsé par <a href="https://www.gatsbyjs.com/">Gatsby</a>{" "}
+        et <a href="https://www.netlify.com/">Netlify</a>.
+      </Text>
     </footer>
   );
 };
@@ -24,8 +33,8 @@ const Footer = ({ author, title, image, year }) => {
 export default Footer;
 
 Footer.propTypes = {
-  author: PropTypes.string,
-  title: PropTypes.string,
-  image: PropTypes.any,
-  year: PropTypes.string,
+  author: PropTypes.string.isRequired,
+  image: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired,
+  year: PropTypes.number.isRequired,
 };

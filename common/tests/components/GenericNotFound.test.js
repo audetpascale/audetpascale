@@ -3,10 +3,10 @@
  */
 import React from "react";
 import renderer from "react-test-renderer";
-import { NotFound } from "../../index";
+import { GenericNotFound } from "../../index";
 
 test("Generate NotFound", () => {
-  const component = renderer.create(<NotFound />);
+  const component = renderer.create(<GenericNotFound />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -1,13 +1,10 @@
-import { Footer } from "@audetpascale/common";
+import { GenericLayout } from "@audetpascale/common";
 import { graphql, useStaticQuery } from "gatsby";
-import Header from "./Header";
-import { Helmet } from "react-helmet";
-import { useLocation } from "@reach/router";
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticImage } from "gatsby-plugin-image";
 
-const Layout = ({ children, title, description, image, ogType }) => {
+const Layout = ({ children, ...rest }) => {
   const defaultSiteMetadata = useStaticQuery(graphql`
     query defaultSiteMetadata {
       site {
@@ -24,60 +21,36 @@ const Layout = ({ children, title, description, image, ogType }) => {
     }
   `);
 
-  const seo = {
-    title:
-      (title == null ? "" : `${title} | `) +
-      defaultSiteMetadata.site.siteMetadata.title,
-    description:
-      description || defaultSiteMetadata.site.siteMetadata.description,
-    image: `${defaultSiteMetadata.site.siteMetadata.siteUrl}${
-      image || defaultSiteMetadata.site.siteMetadata.image
-    }`,
-    url: `${defaultSiteMetadata.site.siteMetadata.siteUrl}${
-      useLocation().pathname
-    }`,
-  };
+  const menuItems = [
+    { link: "https://j-art-diner.audetpascale.com/", title: "J'art diner" },
+    { link: "https://tech-n-app.audetpascale.com/", title: "Tech 'n' App" },
+  ];
 
   return (
-    <div>
-      <Helmet title={seo.title}>
-        <html lang="fr-ca" />
-        <meta name="description" content={seo.description} />
-        <meta name="image" content={seo.image} />
-
-        <meta property="og:title" content={seo.title} />
-        <meta property="og:description" content={seo.description} />
-        <meta property="og:type" content={ogType || "website"} />
-        <meta property="og:url" content={seo.url} />
-        <meta property="og:image" content={seo.image} />
-
-        <meta name="twitter:title" content={seo.title} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:creator"
-          content={
-            defaultSiteMetadata.site.siteMetadata.description.twitterUsername
-          }
+    <GenericLayout
+      defaultSiteMetadata={defaultSiteMetadata}
+      menuItems={menuItems}
+      headerImage={
+        <StaticImage
+          alt="logo"
+          src="../images/icon.png"
+          width={48}
+          height={48}
         />
-        <meta name="twitter:description" content={seo.description} />
-        <meta name="twitter:image" content={seo.image} />
-      </Helmet>
-      <Header />
+      }
+      footerImage={
+        <StaticImage
+          alt="logo"
+          src="../images/icon.png"
+          width={20}
+          height={20}
+        />
+      }
+      {...rest}
+      year={2021}
+    >
       {children}
-      <Footer
-        author={defaultSiteMetadata.site.siteMetadata.author}
-        title={defaultSiteMetadata.site.siteMetadata.title}
-        image={
-          <StaticImage
-            alt="utils"
-            src="../images/icon.png"
-            width={20}
-            height={20}
-          />
-        }
-        year="2021"
-      />
-    </div>
+    </GenericLayout>
   );
 };
 
