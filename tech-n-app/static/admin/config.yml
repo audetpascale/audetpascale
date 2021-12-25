@@ -21,11 +21,11 @@ collections:
       preview: false
     fields:
       - {
-        label: "Template Key",
-        name: "templateKey",
-        widget: "hidden",
-        default: "blog-page",
-      }
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blog-page",
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "image", widget: "image" }
@@ -41,11 +41,11 @@ collections:
         name: "index"
         fields:
           - {
-            label: "Template Key",
-            name: "templateKey",
-            widget: "hidden",
-            default: "index-page",
-          }
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -54,11 +54,11 @@ collections:
         name: "about"
         fields:
           - {
-            label: "Template Key",
-            name: "templateKey",
-            widget: "hidden",
-            default: "about-page",
-          }
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Description", name: "description", widget: "string" }

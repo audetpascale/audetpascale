@@ -31,6 +31,7 @@
     "gatsby-plugin-well-known": "*",
     "gatsby-source-filesystem": "*",
     "gatsby-transformer-sharp": "*",
+    "lodash": "*",
     "netlify-cms-app": "^2.15.19",
     "react": "^17.0.1",
     "react-dom": "*",

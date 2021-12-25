@@ -32,6 +32,7 @@
     "gatsby-source-filesystem": "*",
     "gatsby-transformer-remark": "*",
     "gatsby-transformer-sharp": "*",
+    "lodash": "*",
     "netlify-cms-app": "^2.15.19",
     "prop-types": "*",
     "react": "^17.0.1",
