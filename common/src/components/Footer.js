@@ -14,13 +14,13 @@ const Footer = ({ author, image, title, year }) => {
         m: "auto",
         p: 2,
         variant: "styles.footer",
-        width: 1024,
+        width: [null, null, 768],
       }}
     >
       <Text>
         © {year} - {new Date().getFullYear()} {author}.
       </Text>
-      <div sx={{ mx: "auto" }} />
+      <div sx={{ mx: "auto", minWidth: 16 }} />
       {image}
       <Text>
         {title} est propulsé par <a href="https://www.gatsbyjs.com/">Gatsby</a>{" "}

@@ -21,7 +21,7 @@ const BlogPage = ({ data }) => {
           src={getSrc(post.frontmatter.image.childImageSharp.gatsbyImageData)}
           variant="heading"
         />
-        <Container variant="main">
+        <Container>
           <Heading as="h2">{post.frontmatter.title}</Heading>
           <Heading as="h3">{post.frontmatter.description}</Heading>
           <Text dangerouslySetInnerHTML={{ __html: post.html }} />

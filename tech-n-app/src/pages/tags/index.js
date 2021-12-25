@@ -27,7 +27,7 @@ const TagsPage = ({ data }) => {
 
   return (
     <Layout title="Étiquette">
-      <Container variant="main">
+      <Container>
         {typeof window !== "undefined" && ApexCharts != null && (
           <ApexCharts
             options={options}

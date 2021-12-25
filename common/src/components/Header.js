@@ -23,16 +23,16 @@ const Header = ({ homeImage, items }) => {
           height: 56,
           lineHeight: 3,
           m: "auto",
-          width: 1024,
+          width: [null, null, 768],
         }}
       >
         <NavLink href="/" px={2}>
           {homeImage} Accueil
         </NavLink>
-        <div sx={{ mx: "auto" }} />
+        <div sx={{ mx: "auto", minWidth: 16 }} />
         {items.map(({ title, link }, index) => (
           <NavLink key={index} href={link} px={2}>
-            {title}
+            <small>{title}</small>
           </NavLink>
         ))}
       </Flex>

@@ -10,7 +10,7 @@ const IndexPage = () => {
   return (
     <Provider store={store}>
       <Layout>
-        <Container variant="main">
+        <Container>
           <h1>Utilitaire</h1>
           <Convert />
           <Replace />
