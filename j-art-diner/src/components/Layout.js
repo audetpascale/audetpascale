@@ -43,7 +43,7 @@ const Layout = ({ children, ...rest }) => {
       title: post.frontmatter.title,
     })
   );
-  menuItems.unshift({ link: "data", title: "Données" });
+  menuItems.unshift({ link: "/data", title: "Données" });
 
   return (
     <GenericLayout

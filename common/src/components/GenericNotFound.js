@@ -1,14 +1,15 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Container, Flex, Heading, jsx, Text } from "theme-ui";
-import { Link } from "gatsby";
+import { Flex, Heading, jsx, Link, Text } from "theme-ui";
 import React from "react";
+
+const image = require("../images/take-a-nap.jpg");
 
 const GenericNotFound = () => {
   return (
     <Flex
       sx={{
-        backgroundImage: "url('/img/take-a-nap.jpg')",
+        backgroundImage: `url(${image.default})`,
         backgroundPosition: "center",
         flex: 1,
       }}
@@ -32,7 +33,7 @@ const GenericNotFound = () => {
           .
         </Text>
         <span sx={{ mx: "auto" }} />
-        <Link to="/" sx={{ color: "primary", pt: "50vh" }}>
+        <Link href="/" sx={{ color: "primary", pt: "50vh" }}>
           Accueil
         </Link>
       </Flex>
