@@ -9,7 +9,6 @@ const theme = {
       width: "100%",
       objectPosition: "center",
       maxHeight: "25vh",
-      m: "auto",
     },
   },
 };

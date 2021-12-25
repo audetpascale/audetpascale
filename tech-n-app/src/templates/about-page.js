@@ -16,12 +16,12 @@ const AboutPage = ({ data }) => {
       image={getSrc(post.frontmatter.image.childImageSharp.gatsbyImageData)}
       ogType="article:author"
     >
+      <Image
+        src={getSrc(post.frontmatter.image.childImageSharp.gatsbyImageData)}
+        variant="heading"
+        sx={{ objectPosition: "bottom" }}
+      />
       <Container>
-        <Image
-          src={getSrc(post.frontmatter.image.childImageSharp.gatsbyImageData)}
-          variant="heading"
-          sx={{ objectPosition: "bottom" }}
-        />
         <Heading as="h2">{post.frontmatter.title}</Heading>
         <Heading as="h3">{data.site.siteMetadata.author}</Heading>
         <Heading as="h4">{post.frontmatter.description}</Heading>
