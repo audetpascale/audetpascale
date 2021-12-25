@@ -17,11 +17,11 @@ const BlogPage = ({ data }) => {
       ogType="article"
     >
       <article>
+        <Image
+          src={getSrc(post.frontmatter.image.childImageSharp.gatsbyImageData)}
+          variant="heading"
+        />
         <Container variant="main">
-          <Image
-            src={getSrc(post.frontmatter.image.childImageSharp.gatsbyImageData)}
-            variant="heading"
-          />
           <Heading as="h2">{post.frontmatter.title}</Heading>
           <Heading as="h3">{post.frontmatter.description}</Heading>
           <Text dangerouslySetInnerHTML={{ __html: post.html }} />

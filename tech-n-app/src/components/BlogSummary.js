@@ -1,6 +1,6 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Box, Container, Grid, Heading, jsx, Text } from "theme-ui";
+import { Box, Grid, Heading, jsx, Text } from "theme-ui";
 import { getSrc } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
@@ -20,32 +20,30 @@ const BlogSummary = ({ numChild, post }) => {
   );
   const text = (
     <article key="info">
-      <Container>
-        <Heading as="h3">
-          <Link sx={{ color: "primary" }} to={post.fields.slug}>
-            {post.frontmatter.title}
-          </Link>
-        </Heading>
-        <Heading as="h4">{post.frontmatter.description}</Heading>
-        <Heading as="h5">
-          <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
-        </Heading>
-        <Text>
-          <summary>{post.excerpt}</summary>
-        </Text>
-        <Text sx={{ textAlign: "right" }}>
-          <Link sx={{ color: "primaryLight" }} to={post.fields.slug}>
-            Lire →
-          </Link>
-        </Text>
-      </Container>
+      <Heading as="h3">
+        <Link sx={{ color: "primary" }} to={post.fields.slug}>
+          {post.frontmatter.title}
+        </Link>
+      </Heading>
+      <Heading as="h4">{post.frontmatter.description}</Heading>
+      <Heading as="h5">
+        <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
+      </Heading>
+      <Text>
+        <summary>{post.excerpt}</summary>
+      </Text>
+      <Text sx={{ textAlign: "right" }}>
+        <Link sx={{ color: "primaryLight" }} to={post.fields.slug}>
+          Lire →
+        </Link>
+      </Text>
     </article>
   );
 
   const elements = numChild % 2 ? [img, text] : [text, img];
 
   return (
-    <Grid columns={2} width={256}>
+    <Grid columns={2} width={384}>
       {elements}
     </Grid>
   );

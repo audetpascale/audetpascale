@@ -37,18 +37,10 @@ const Layout = ({ children, ...rest }) => {
     }
   `);
 
-  let menuItems = defaultSiteMetadata.allMarkdownRemark.edges.map(
-    ({ node: post }) => ({
-      link: post.fields.slug,
-      title: post.frontmatter.title,
-    })
-  );
-  menuItems.unshift({ link: "/data", title: "Données" });
-
   return (
     <GenericLayout
       defaultSiteMetadata={defaultSiteMetadata}
-      menuItems={menuItems}
+      menuItems={[{ link: "/data", title: "Données" }]}
       headerImage={
         <StaticImage
           alt="logo"

@@ -23,7 +23,7 @@ const IndexPage = (props) => {
       <Container>
         <Heading as="h1">{props.data.site.siteMetadata.title}</Heading>
         <Text>{props.data.site.siteMetadata.description}</Text>
-        <Grid columns={[2, "1fr 2fr"]}>
+        <Grid columns={[2, "1fr 2fr"]} width={[255, null]}>
           <Box>
             <svg
               viewBox="0 0 50 100"
@@ -35,7 +35,7 @@ const IndexPage = (props) => {
                 y="43%"
                 style={{ height: "14%", textAlign: "right", width: "70%" }}
               >
-                <Text as="h2" sx={{ fontSize: "5px" }} mx={0.5}>
+                <Text as="h2" sx={{ fontSize: "5px" }}>
                   {props.data.markdownRemark.frontmatter.heading}
                 </Text>
               </foreignObject>
@@ -50,7 +50,7 @@ const IndexPage = (props) => {
                 y="44%"
                 style={{ height: "30%", textAlign: "left", width: "75%" }}
               >
-                <Text as="h3" sx={{ fontSize: "5px" }} mx={0.5}>
+                <Text as="h3" sx={{ fontSize: "5px" }} mx={0.875}>
                   {props.data.markdownRemark.frontmatter.subheading}
                 </Text>
               </foreignObject>
