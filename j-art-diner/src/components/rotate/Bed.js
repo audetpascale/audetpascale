@@ -1,6 +1,6 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import {Box, jsx} from "theme-ui";
+import { Box, jsx } from "theme-ui";
 import PropTypes from "prop-types";
 
 const Bed = ({ bed, length }) => {

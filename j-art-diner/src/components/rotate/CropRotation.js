@@ -1,8 +1,8 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import {Heading, jsx, Link, Text} from "theme-ui";
+import { Heading, jsx, Link, Text } from "theme-ui";
 import Plot from "./Plot";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 const CropRotation = () => {
   const rotateState = useSelector((state) => state.rotate);

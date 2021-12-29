@@ -1,10 +1,10 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import {Heading, Input, jsx, Label, Link, Text} from "theme-ui";
-import {useDispatch, useSelector} from "react-redux";
+import { Heading, Input, jsx, Label, Link, Text } from "theme-ui";
+import { useDispatch, useSelector } from "react-redux";
 import React from "react";
 import Table from "../Table";
-import {convertPlantAutonomies} from "./dataSlice";
+import { convertPlantAutonomies } from "./dataSlice";
 
 const StaticData = () => {
   const dataState = useSelector((state) => state.data);

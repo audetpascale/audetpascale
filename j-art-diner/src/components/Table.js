@@ -1,7 +1,13 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import {Button, Input, jsx, Select} from "theme-ui";
-import {useAsyncDebounce, useGlobalFilter, usePagination, useSortBy, useTable,} from "react-table";
+import { Button, Input, jsx, Select } from "theme-ui";
+import {
+  useAsyncDebounce,
+  useGlobalFilter,
+  usePagination,
+  useSortBy,
+  useTable,
+} from "react-table";
 import React from "react";
 
 function GlobalFilter({
