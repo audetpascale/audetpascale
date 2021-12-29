@@ -38,6 +38,7 @@
     "react": "^17.0.1",
     "react-dom": "*",
     "react-redux": "*",
+    "react-table": "*",
     "theme-ui": "^0.12.1"
   },
   "devDependencies": {

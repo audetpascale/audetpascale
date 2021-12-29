@@ -1,12 +1,12 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Box, Card, Grid, Heading, jsx } from "theme-ui";
+import {Box, Card, Grid, Heading, jsx} from "theme-ui";
 import PropTypes from "prop-types";
 import Bed from "./Bed";
 
 const Plot = ({ plot }) => {
   return [
-    <Heading as="h3">
+    <Heading as="h3" key={`${plot.name}.H`}>
       {plot.name} : {plot.length}
     </Heading>,
     <Grid
@@ -15,6 +15,7 @@ const Plot = ({ plot }) => {
         fontWeight: "bold",
         textAlign: "center",
       }}
+      key={`${plot.name}.G`}
     >
       <Card>
         {plot.beds.first.map((bed, index) => (

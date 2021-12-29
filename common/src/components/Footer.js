@@ -14,7 +14,7 @@ const Footer = ({ author, image, title, year }) => {
         m: "auto",
         p: 2,
         variant: "styles.footer",
-        width: [null, null, 768],
+        width: [null, null, 1024],
       }}
     >
       <Text>

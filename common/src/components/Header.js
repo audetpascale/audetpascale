@@ -23,7 +23,7 @@ const Header = ({ homeImage, items }) => {
           height: 56,
           lineHeight: 3,
           m: "auto",
-          width: [null, null, 768],
+          width: [null, null, 1024],
         }}
       >
         <NavLink href="/" px={2}>

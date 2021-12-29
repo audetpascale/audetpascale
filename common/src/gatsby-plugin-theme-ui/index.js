@@ -11,6 +11,20 @@ const theme = {
       maxHeight: "25vh",
     },
   },
+  layout: {
+    ...sketchy.layout,
+    container: {
+      p: 3,
+    },
+  },
+  lineHeights: {
+    ...sketchy.lineHeights,
+    heading: 2,
+  },
+  sizes: {
+    ...sketchy.sizes,
+    container: 1024,
+  },
 };
 
 export default theme;
