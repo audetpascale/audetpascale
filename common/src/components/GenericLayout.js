@@ -92,7 +92,6 @@ const GenericLayout = ({
 export default GenericLayout;
 
 GenericLayout.propTypes = {
-  children: PropTypes.element.isRequired,
   defaultSiteMetadata: PropTypes.object.isRequired,
   menuItems: PropTypes.array.isRequired,
   footerImage: PropTypes.element.isRequired,

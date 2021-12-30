@@ -57,7 +57,7 @@ const Table = ({ columns, data }) => {
   } = useTable({ columns, data }, useGlobalFilter, useSortBy, usePagination);
 
   return (
-    <table {...getTableProps()} width="100%" sx={{ minWidth: 512 }}>
+    <table {...getTableProps()} width="100%" sx={{ minWidth: 768 }}>
       <thead>
         <tr>
           <th colSpan={columns.length} sx={{ textAlign: "left" }}>
