@@ -40,7 +40,7 @@ export const rotateSlice = createSlice({
             { name: "Roquette", quantity: 1 },
             { name: "Laitue", quantity: 1 },
             { name: "Moutarde", quantity: 1 },
-            { name: "Bette à carde", quantity: 2 },
+            { name: "Céleri", quantity: 2 },
             { name: "Haricot grimpant", quantity: 2 },
             { name: "Roquette", quantity: 2 },
             { name: "Épinard", quantity: 4 },
@@ -56,9 +56,8 @@ export const rotateSlice = createSlice({
           last: [
             { name: "Brocoli", quantity: 4 },
             { name: "Chou", quantity: 3 },
-            { name: "Courgette", quantity: 1 },
-            { name: "Chou-fleur", quantity: 2 },
-            { name: "Brocoli", quantity: 4 },
+            { name: "Courgette", quantity: 2 },
+            { name: "Chou-fleur", quantity: 5 },
             { name: "Chou-rave", quantity: 2 },
           ],
         },
@@ -74,7 +73,7 @@ export const rotateSlice = createSlice({
             { name: "Navet", quantity: 1 },
             { name: "Roquette", quantity: 1 },
             { name: "Radis", quantity: 1 },
-            { name: "Betterave", quantity: 2 },
+            { name: "Carotte", quantity: 2 },
             { name: "Chicorée", quantity: 1 },
             { name: "Pois des neiges", quantity: 4 },
             { name: "Laitue", quantity: 1 },
@@ -125,11 +124,11 @@ export const rotateSlice = createSlice({
         width: 90,
         beds: {
           first: [
-            { name: "Brocoli", quantity: 8 },
+            { name: "Brocoli", quantity: 3 },
             { name: "Chou chinois", quantity: 1 },
             { name: "Chou-rave", quantity: 1 },
             { name: "Kale", quantity: 1 },
-            { name: "Courgette", quantity: 3 },
+            { name: "Courgette", quantity: 8 },
             { name: "Chou-fleur", quantity: 2 },
           ],
           last: [{ name: "Avoine et pois", quantity: 16 }],
@@ -150,7 +149,7 @@ export const rotateSlice = createSlice({
             { name: "Mesclun", quantity: 2 },
           ],
           last: [
-            { name: "Betterave", quantity: 2 },
+            { name: "Carotte", quantity: 2 },
             { name: "Mesclun", quantity: 11 },
             { name: "Carotte", quantity: 3 },
           ],
@@ -213,7 +212,7 @@ export const rotateSlice = createSlice({
             { name: "Radis", quantity: 1 },
             { name: "Betterave", quantity: 2 },
             { name: "Chicorée", quantity: 1 },
-            { name: "Pois des neiges", quantity: 4 },
+            { name: "Pois mange-tout", quantity: 4 },
             { name: "Laitue", quantity: 1 },
           ],
           last: [
@@ -223,6 +222,94 @@ export const rotateSlice = createSlice({
             { name: "Chou", quantity: 2 },
           ],
         },
+      },
+    ],
+    perennials: [
+      {
+        name: "A5",
+        length: 400,
+        width: 90,
+        beds: [{ name: "Asperge", quantity: 16 }],
+      },
+      {
+        name: "BG1",
+        length: 75,
+        width: 17.5,
+        beds: [{ name: "Thym", quantity: 16 }],
+      },
+      {
+        name: "BN1",
+        length: 30,
+        width: 30,
+        beds: [{ name: "Ciboulette", quantity: 16 }],
+      },
+      {
+        name: "BN2",
+        length: 30,
+        width: 30,
+        beds: [{ name: "Ciboulette", quantity: 16 }],
+      },
+      {
+        name: "BN3",
+        length: 30,
+        width: 30,
+        beds: [{ name: "Menthe", quantity: 16 }],
+      },
+      {
+        name: "BN4",
+        length: 30,
+        width: 30,
+        beds: [{ name: "Ciboulette", quantity: 16 }],
+      },
+      {
+        name: "BR1",
+        length: 35,
+        width: 75,
+        beds: [{ name: "Souchet", quantity: 16 }],
+      },
+      {
+        name: "BR2",
+        length: 35,
+        width: 75,
+        beds: [{ name: "Souchet", quantity: 16 }],
+      },
+      {
+        name: "C1",
+        length: 2400,
+        width: 25,
+        beds: [{ name: "Caraganier", quantity: 16 }],
+      },
+      {
+        name: "J1",
+        length: 750,
+        width: 75,
+        beds: [{ name: "Fraise", quantity: 16 }],
+      },
+      {
+        name: "M1",
+        length: 720,
+        width: 125,
+        beds: [
+          { name: "Échinacée", quantity: 6 },
+          { name: "Oseille", quantity: 2 },
+          { name: "Asperge", quantity: 2 },
+          { name: "Millepertuis", quantity: 6 },
+        ],
+      },
+      {
+        name: "M2",
+        length: 720,
+        width: 125,
+        beds: [{ name: "Asperge", quantity: 16 }],
+      },
+      {
+        name: "R1",
+        length: 1150,
+        width: 90,
+        beds: [
+          { name: "Chou marin", quantity: 5 },
+          { name: "Rhubarbe", quantity: 11 },
+        ],
       },
     ],
   },
@@ -261,6 +348,19 @@ export const rotateSlice = createSlice({
           })),
         },
       }));
+
+      state.perennials = state.perennials.map(
+        ({ length, width, beds, ...rest }) => ({
+          ...rest,
+          length,
+          width,
+          beds: beds.map(({ name, quantity }) => ({
+            name,
+            quantity,
+            plantQuantity: calculateAmount(length, width, name, quantity),
+          })),
+        })
+      );
     },
   },
 });

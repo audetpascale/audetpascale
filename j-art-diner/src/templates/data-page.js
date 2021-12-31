@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
 import { Container, jsx } from "theme-ui";
-import CropRotation from "../components/rotate/CropRotation";
+import Plan from "../components/rotate/Plan";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PropTypes from "prop-types";
@@ -15,7 +15,7 @@ const DataPage = () => {
       <Layout>
         <Container>
           <StaticData />
-          <CropRotation />
+          <Plan />
         </Container>
       </Layout>
     </Provider>

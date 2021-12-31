@@ -972,13 +972,18 @@ export const dataSlice = createSlice({
         .map((plot) => [plot.beds.first, plot.beds.last])
         .flat()
         .flat();
+      const perennials = payload.perennials.map((plot) => plot.beds).flat();
 
       state.plants = state.plants.map(({ name, ...rest }) => ({
         name,
         ...rest,
-        expectedQuantity: beds
-          .filter((bed) => bed.name === name)
-          .reduce((acc, bed) => acc + bed.plantQuantity?.quantity, 0),
+        expectedQuantity:
+          beds
+            .filter((bed) => bed.name === name)
+            .reduce((acc, bed) => acc + bed.plantQuantity?.quantity, 0) +
+          perennials
+            .filter((bed) => bed.name === name)
+            .reduce((acc, bed) => acc + bed.plantQuantity?.quantity, 0),
       }));
     },
     convertPlantAutonomies: (state, { payload }) => {

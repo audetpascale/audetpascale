@@ -5,49 +5,84 @@ import PropTypes from "prop-types";
 import Bed from "./Bed";
 
 const Plot = ({ plot }) => {
+  let grid;
+  if (Array.isArray(plot.beds)) {
+    grid = (
+      <Grid
+        columns={1}
+        sx={{
+          fontWeight: "bold",
+          textAlign: "center",
+          fontFamily: "system-ui",
+        }}
+        key={`${plot.name}.G`}
+      >
+        <Card>
+          {plot.beds.map((bed, index) => (
+            <Bed key={index} bed={bed} length={plot.length / 16} />
+          ))}
+        </Card>
+        <Box>
+          Total:{" "}
+          {Math.round(
+            plot.beds.reduce(
+              (total, bed) =>
+                bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
+              0
+            )
+          )}
+        </Box>
+      </Grid>
+    );
+  } else {
+    grid = (
+      <Grid
+        columns={2}
+        sx={{
+          fontWeight: "bold",
+          textAlign: "center",
+          fontFamily: "system-ui",
+        }}
+        key={`${plot.name}.G`}
+      >
+        <Card>
+          {plot.beds.first.map((bed, index) => (
+            <Bed key={index} bed={bed} length={plot.length / 16} />
+          ))}
+        </Card>
+        <Card bg="grey">
+          {plot.beds.last.map((bed, index) => (
+            <Bed key={index} bed={bed} length={plot.length / 16} />
+          ))}
+        </Card>
+        <Box>
+          Total:{" "}
+          {Math.round(
+            plot.beds.first.reduce(
+              (total, bed) =>
+                bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
+              0
+            )
+          )}
+        </Box>
+        <Box>
+          Total:{" "}
+          {Math.round(
+            plot.beds.last.reduce(
+              (total, bed) =>
+                bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
+              0
+            )
+          )}
+        </Box>
+      </Grid>
+    );
+  }
   return [
     <Heading as="h3" key={`${plot.name}.H`}>
       {plot.name} : L {plot.length}cm x l {plot.width}cm
     </Heading>,
-    <Grid
-      columns={2}
-      sx={{
-        fontWeight: "bold",
-        textAlign: "center",
-      }}
-      key={`${plot.name}.G`}
-    >
-      <Card>
-        {plot.beds.first.map((bed, index) => (
-          <Bed key={index} bed={bed} length={plot.length / 16} />
-        ))}
-      </Card>
-      <Card bg="grey">
-        {plot.beds.last.map((bed, index) => (
-          <Bed key={index} bed={bed} length={plot.length / 16} />
-        ))}
-      </Card>
-      <Box>
-        Total:{" "}
-        {Math.round(
-          plot.beds.first.reduce(
-            (total, bed) =>
-              bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
-            0
-          )
-        )}
-      </Box>
-      <Box>
-        Total:{" "}
-        {Math.round(
-          plot.beds.last.reduce(
-            (total, bed) =>
-              bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
-            0
-          )
-        )}
-      </Box>
-    </Grid>,
+    grid,
   ];
 };
 

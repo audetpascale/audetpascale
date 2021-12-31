@@ -2,15 +2,16 @@
 // noinspection ES6UnusedImports
 import { Heading, jsx, Link, Text } from "theme-ui";
 import { useSelector } from "react-redux";
-import Carousel from "../Carousel";
 import React from "react";
+import CropRotation from "./CropRotation";
+import Perennial from "./Perennial";
 
-const CropRotation = () => {
+const Plan = () => {
   const rotateState = useSelector((state) => state.rotate);
 
   return (
     <span>
-      <Heading as="h3">Plan du jardin</Heading>
+      <Heading as="h2">Plan du jardin</Heading>
       <Text>
         Mes plans de jardin sont basés sur le livre{" "}
         <Link href="https://lejardiniermaraicher.com/publications/category-publications-le-jardinier-maraicher/">
@@ -22,28 +23,10 @@ const CropRotation = () => {
         de la terre et de se débarrasser des maladies qu'il y aurait eu pendant
         l'année pour une famille de plantes.
       </Text>
-      <Carousel
-        columns={React.useMemo(
-          () => [
-            {
-              accessor: "name",
-            },
-            {
-              accessor: "length",
-            },
-            {
-              accessor: "width",
-            },
-            {
-              accessor: "beds",
-            },
-          ],
-          []
-        )}
-        data={React.useMemo(() => rotateState.plots, [rotateState])}
-      />
+      <CropRotation />
+      <Perennial />
     </span>
   );
 };
 
-export default CropRotation;
+export default Plan;

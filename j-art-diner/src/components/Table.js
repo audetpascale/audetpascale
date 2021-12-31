@@ -79,7 +79,7 @@ const Table = ({ columns, data }) => {
           </tr>
         ))}
       </thead>
-      <tbody {...getTableBodyProps()}>
+      <tbody {...getTableBodyProps()} sx={{ fontFamily: "system-ui" }}>
         {page.map((row) => {
           prepareRow(row);
           return (

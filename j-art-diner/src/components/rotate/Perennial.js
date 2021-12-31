@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import Carousel from "../Carousel";
 import React from "react";
 
-const CropRotation = () => {
+const Perennial = () => {
   const rotateState = useSelector((state) => state.rotate);
 
   return (
@@ -40,10 +40,10 @@ const CropRotation = () => {
           ],
           []
         )}
-        data={React.useMemo(() => rotateState.plots, [rotateState])}
+        data={React.useMemo(() => rotateState.perennials, [rotateState])}
       />
     </span>
   );
 };
 
-export default CropRotation;
+export default Perennial;
