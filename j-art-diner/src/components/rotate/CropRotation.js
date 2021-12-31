@@ -1,8 +1,9 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
 import { Heading, jsx, Link, Text } from "theme-ui";
-import Plot from "./Plot";
 import { useSelector } from "react-redux";
+import Carousel from "../Carousel";
+import React from "react";
 
 const CropRotation = () => {
   const rotateState = useSelector((state) => state.rotate);
@@ -21,9 +22,26 @@ const CropRotation = () => {
         de la terre et de se débarrasser des maladies qu'il y aurait eu pendant
         l'année pour une famille de plantes.
       </Text>
-      {rotateState.plots.map((plot, index) => (
-        <Plot key={index} plot={plot} />
-      ))}
+      <Carousel
+        columns={React.useMemo(
+          () => [
+            {
+              accessor: "name",
+            },
+            {
+              accessor: "length",
+            },
+            {
+              accessor: "width",
+            },
+            {
+              accessor: "beds",
+            },
+          ],
+          []
+        )}
+        data={React.useMemo(() => rotateState.plots, [rotateState])}
+      />
     </span>
   );
 };

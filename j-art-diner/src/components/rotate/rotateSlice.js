@@ -5,221 +5,266 @@ export const rotateSlice = createSlice({
   initialState: {
     plots: [
       {
-        name: "Cuccurbites et crucifères primeurs",
-        length: 585,
+        name: "Solanacées",
+        length: 655,
+        width: 90,
         beds: {
-          first: [
-            { name: "Brocoli", length: 3 },
-            { name: "Bok choy", length: 1 },
-            { name: "Chou-rave", length: 1 },
-            { name: "Kale", length: 1 },
-            { name: "Brocoli", length: 5 },
-            { name: "Courgette", length: 3 },
-            { name: "Chou-fleur", length: 2 },
+          first: [{ name: "Avoine et pois", quantity: 16 }],
+          last: [
+            { name: "Tomate cerise", quantity: 5 },
+            { name: "Cerise de terre", quantity: 2 },
+            { name: "Piment", quantity: 1 },
+            { name: "Poivron", quantity: 2 },
+            { name: "Melon", quantity: 6 },
           ],
-          last: [{ name: "Engrais vert", length: 16 }],
         },
       },
       {
         name: "Verdures-racines",
-        length: 585,
+        length: 655,
+        width: 90,
         beds: {
           first: [
-            { name: "Mesclun", length: 2 },
-            { name: "Pois", length: 4 },
-            { name: "Carotte", length: 2 },
-            { name: "Betterave", length: 1 },
-            { name: "Navet", length: 1 },
-            { name: "Épinard", length: 1 },
-            { name: "Mesclun", length: 2 },
-            { name: "Épinard", length: 3 },
+            { name: "Haricot grimpant", quantity: 2 },
+            { name: "Radis", quantity: 1 },
+            { name: "Carotte", quantity: 2 },
+            { name: "Navet", quantity: 1 },
+            { name: "Roquette", quantity: 2 },
+            { name: "Laitue", quantity: 2 },
+            { name: "Betterave", quantity: 2 },
+            { name: "Haricot nain", quantity: 4 },
           ],
           last: [
-            { name: "Betterave", length: 2 },
-            { name: "Mesclun", length: 8 },
-            { name: "Carotte", length: 3 },
-            { name: "Mesclun", length: 3 },
+            { name: "Épinard", quantity: 2 },
+            { name: "Laitue", quantity: 1 },
+            { name: "Roquette", quantity: 1 },
+            { name: "Laitue", quantity: 1 },
+            { name: "Moutarde", quantity: 1 },
+            { name: "Bette à carde", quantity: 2 },
+            { name: "Haricot grimpant", quantity: 2 },
+            { name: "Roquette", quantity: 2 },
+            { name: "Épinard", quantity: 4 },
+          ],
+        },
+      },
+      {
+        name: "Cuccurbites et crucifères primeurs",
+        length: 655,
+        width: 90,
+        beds: {
+          first: [{ name: "Avoine et pois", quantity: 16 }],
+          last: [
+            { name: "Brocoli", quantity: 4 },
+            { name: "Chou", quantity: 3 },
+            { name: "Courgette", quantity: 1 },
+            { name: "Chou-fleur", quantity: 2 },
+            { name: "Brocoli", quantity: 4 },
+            { name: "Chou-rave", quantity: 2 },
+          ],
+        },
+      },
+      {
+        name: "Verdures-racines",
+        length: 655,
+        width: 90,
+        beds: {
+          first: [
+            { name: "Carotte", quantity: 4 },
+            { name: "Coriandre", quantity: 1 },
+            { name: "Navet", quantity: 1 },
+            { name: "Roquette", quantity: 1 },
+            { name: "Radis", quantity: 1 },
+            { name: "Betterave", quantity: 2 },
+            { name: "Chicorée", quantity: 1 },
+            { name: "Pois des neiges", quantity: 4 },
+            { name: "Laitue", quantity: 1 },
+          ],
+          last: [
+            { name: "Laitue", quantity: 4 },
+            { name: "Mesclun", quantity: 9 },
+            { name: "Chou chinois", quantity: 1 },
+            { name: "Chou", quantity: 2 },
           ],
         },
       },
       {
         name: "Ail",
         length: 585,
+        width: 90,
         beds: {
-          first: [{ name: "Ail", length: 16 }],
-          last: [{ name: "Engrais vert", length: 16 }],
+          first: [
+            { name: "Ail", quantity: 4 },
+            { name: "Échalote de Sainte-Anne", quantity: 12 },
+          ],
+          last: [{ name: "Avoine et pois", quantity: 16 }],
         },
       },
       {
         name: "Verdures-racines",
         length: 585,
+        width: 75,
         beds: {
           first: [
-            { name: "Mesclun", length: 4 },
-            { name: "Haricot", length: 4 },
-            { name: "Carotte", length: 4 },
-            { name: "Laitue", length: 4 },
-          ],
-          last: [{ name: "Ail", length: 16 }],
-        },
-      },
-      {
-        name: "Solanacées",
-        length: 655,
-        beds: {
-          first: [{ name: "Engrais vert", length: 16 }],
-          last: [
-            { name: "Aubergine", length: 5 },
-            { name: "Cerise de terre", length: 2 },
-            { name: "Piment fort", length: 1 },
-            { name: "Poivron", length: 2 },
-            { name: "Melon", length: 6 },
-          ],
-        },
-      },
-      {
-        name: "Verdures-racines",
-        length: 655,
-        beds: {
-          first: [
-            { name: "Haricot", length: 2 },
-            { name: "Radis", length: 1 },
-            { name: "Navet", length: 1 },
-            { name: "Carotte", length: 2 },
-            { name: "Roquette", length: 2 },
-            { name: "Laitue", length: 2 },
-            { name: "Betterave", length: 2 },
-            { name: "Haricot", length: 4 },
+            { name: "Mesclun", quantity: 4 },
+            { name: "Haricot grimpant", quantity: 4 },
+            { name: "Carotte", quantity: 4 },
+            { name: "Laitue", quantity: 4 },
           ],
           last: [
-            { name: "Épinard", length: 2 },
-            { name: "Laitue", length: 2 },
-            { name: "Roquette", length: 1 },
-            { name: "Moutarde", length: 1 },
-            { name: "Bette", length: 2 },
-            { name: "Haricot", length: 2 },
-            { name: "Roquette", length: 2 },
-            { name: "Épinard", length: 4 },
+            { name: "Ail en dormance", quantity: 4 },
+            {
+              name: "Échalote de Sainte-Anne en dormance",
+              quantity: 12,
+            },
           ],
         },
       },
       {
         name: "Cuccurbites et crucifères primeurs",
-        length: 655,
+        length: 585,
+        width: 90,
         beds: {
-          first: [{ name: "Engrais vert", length: 16 }],
-          last: [
-            { name: "Brocoli", length: 4 },
-            { name: "Chou d'été", length: 2 },
-            { name: "Chou de Bruxelles", length: 1 },
-            { name: "Courgette", length: 1 },
-            { name: "Chou-fleur", length: 2 },
-            { name: "Brocoli", length: 4 },
-            { name: "Chou-rave", length: 2 },
+          first: [
+            { name: "Brocoli", quantity: 8 },
+            { name: "Chou chinois", quantity: 1 },
+            { name: "Chou-rave", quantity: 1 },
+            { name: "Kale", quantity: 1 },
+            { name: "Courgette", quantity: 3 },
+            { name: "Chou-fleur", quantity: 2 },
           ],
+          last: [{ name: "Avoine et pois", quantity: 16 }],
         },
       },
       {
         name: "Verdures-racines",
-        length: 655,
+        length: 585,
+        width: 90,
         beds: {
           first: [
-            { name: "Carotte", length: 4 },
-            { name: "Coriandre", length: 1 },
-            { name: "Navet", length: 1 },
-            { name: "Radis", length: 1 },
-            { name: "Roquette", length: 1 },
-            { name: "Betterave", length: 2 },
-            { name: "Chicorée", length: 1 },
-            { name: "Pois", length: 4 },
-            { name: "Laitue", length: 1 },
+            { name: "Mesclun", quantity: 2 },
+            { name: "Carotte", quantity: 2 },
+            { name: "Pois des neiges", quantity: 4 },
+            { name: "Betterave", quantity: 1 },
+            { name: "Navet", quantity: 1 },
+            { name: "Épinard", quantity: 4 },
+            { name: "Mesclun", quantity: 2 },
           ],
           last: [
-            { name: "Laitue", length: 4 },
-            { name: "Mesclun", length: 9 },
-            { name: "Chou chinois", length: 1 },
-            { name: "Chou collard", length: 1 },
-            { name: "Fenouil", length: 1 },
+            { name: "Betterave", quantity: 2 },
+            { name: "Mesclun", quantity: 11 },
+            { name: "Carotte", quantity: 3 },
           ],
         },
       },
       {
         name: "Liliacées",
-        length: 750,
+        length: 585,
+        width: 90,
         beds: {
           first: [
-            { name: "Oignon vert", length: 6 },
-            { name: "Poireau", length: 4 },
-            { name: "Oignon de conservation", length: 6 },
+            { name: "Oignon vert", quantity: 6 },
+            { name: "Poireau", quantity: 4 },
+            { name: "Oignon", quantity: 6 },
           ],
-          last: [{ name: "Engrais vert", length: 16 }],
+          last: [{ name: "Avoine et pois", quantity: 16 }],
         },
       },
       {
         name: "Verdures-racines",
         length: 750,
+        width: 100,
         beds: {
-          first: [{ name: "Mesclun", length: 16 }],
+          first: [{ name: "Mesclun", quantity: 16 }],
           last: [
-            { name: "Carotte", length: 2 },
-            { name: "Haricot", length: 2 },
-            { name: "Radis d'hiver", length: 3 },
-            { name: "Chicorée", length: 1 },
-            { name: "Kale", length: 2 },
-            { name: "Chou chinois", length: 2 },
-            { name: "Persil", length: 1 },
-            { name: "Navet", length: 1 },
-            { name: "Radis", length: 1 },
-            { name: "Navet", length: 1 },
+            { name: "Carotte", quantity: 2 },
+            { name: "Haricot grimpant", quantity: 2 },
+            { name: "Radis d'hiver", quantity: 3 },
+            { name: "Chicorée", quantity: 1 },
+            { name: "Kale", quantity: 2 },
+            { name: "Chou chinois", quantity: 2 },
+            { name: "Radis", quantity: 1 },
+            { name: "Persil", quantity: 1 },
+            { name: "Navet", quantity: 2 },
           ],
         },
       },
       {
         name: "Solanacées",
         length: 750,
+        width: 100,
         beds: {
-          first: [{ name: "Moutarde", length: 16 }],
-          last: [{ name: "Tomate", length: 16 }],
+          first: [{ name: "Moutarde", quantity: 16 }],
+          last: [
+            { name: "Tomate", quantity: 12 },
+            { name: "Tomate italienne", quantity: 4 },
+          ],
         },
       },
       {
         name: "Verdures-racines",
         length: 750,
+        width: 75,
         beds: {
           first: [
-            { name: "Carotte", length: 4 },
-            { name: "Coriandre", length: 1 },
-            { name: "Navet", length: 1 },
-            { name: "Radis", length: 1 },
-            { name: "Roquette", length: 1 },
-            { name: "Betterave", length: 2 },
-            { name: "Chicorée", length: 1 },
-            { name: "Pois", length: 4 },
-            { name: "Laitue", length: 1 },
+            { name: "Carotte", quantity: 4 },
+            { name: "Coriandre", quantity: 1 },
+            { name: "Navet", quantity: 1 },
+            { name: "Roquette", quantity: 1 },
+            { name: "Radis", quantity: 1 },
+            { name: "Betterave", quantity: 2 },
+            { name: "Chicorée", quantity: 1 },
+            { name: "Pois des neiges", quantity: 4 },
+            { name: "Laitue", quantity: 1 },
           ],
           last: [
-            { name: "Laitue", length: 4 },
-            { name: "Mesclun", length: 9 },
-            { name: "Chou chinois", length: 1 },
-            { name: "Chou collard", length: 1 },
-            { name: "Fenouil", length: 1 },
+            { name: "Laitue", quantity: 4 },
+            { name: "Mesclun", quantity: 9 },
+            { name: "Chou chinois", quantity: 1 },
+            { name: "Chou", quantity: 2 },
           ],
         },
       },
     ],
   },
   reducers: {
-    convertCelsiusToFahrenheit: (state, { payload }) => {
-      state.celsius = payload;
-      if (isNaN(state.celsius)) {
-        state.fahrenheit = "Non Numérique";
-      } else {
-        state.fahrenheit = (Number(state.celsius) * 9) / 5 + 32;
-      }
+    calculateBedAmount: (state, { payload }) => {
+      const calculateAmount = (bedLength, bedWidth, name, number) => {
+        const data = payload.plants.find(
+          (plant) => plant.name === name.replace(" en dormance", "")
+        );
+        const rows = (number * bedLength) / 16 / data.length;
+        const cols = Math.ceil(bedWidth / data.staggeredWidth);
+        const quantity = Math.round(rows * cols);
+        return {
+          rows: rows,
+          rowsInCm: rows * data.length,
+          cols,
+          colsInCm: (cols - 1) * data.staggeredWidth,
+          quantity,
+        };
+      };
+
+      state.plots = state.plots.map(({ length, width, beds, ...rest }) => ({
+        ...rest,
+        length,
+        width,
+        beds: {
+          first: beds.first.map(({ name, quantity }) => ({
+            name,
+            quantity,
+            plantQuantity: calculateAmount(length, width, name, quantity),
+          })),
+          last: beds.last.map(({ name, quantity }) => ({
+            name,
+            quantity,
+            plantQuantity: calculateAmount(length, width, name, quantity),
+          })),
+        },
+      }));
     },
   },
 });
 
-export const { convertCelsiusToFahrenheit } = rotateSlice.actions;
+export const { calculateBedAmount } = rotateSlice.actions;
 
 export default rotateSlice.reducer;

@@ -7,7 +7,7 @@ import Bed from "./Bed";
 const Plot = ({ plot }) => {
   return [
     <Heading as="h3" key={`${plot.name}.H`}>
-      {plot.name} : {plot.length}
+      {plot.name} : L {plot.length}cm x l {plot.width}cm
     </Heading>,
     <Grid
       columns={2}
@@ -29,16 +29,22 @@ const Plot = ({ plot }) => {
       </Card>
       <Box>
         Total:{" "}
-        {plot.beds.first.reduce(
-          (total, bed) => (bed.length * plot.length) / 16 + total,
-          0
+        {Math.round(
+          plot.beds.first.reduce(
+            (total, bed) =>
+              bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
+            0
+          )
         )}
       </Box>
       <Box>
         Total:{" "}
-        {plot.beds.last.reduce(
-          (total, bed) => (bed.length * plot.length) / 16 + total,
-          0
+        {Math.round(
+          plot.beds.last.reduce(
+            (total, bed) =>
+              bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
+            0
+          )
         )}
       </Box>
     </Grid>,

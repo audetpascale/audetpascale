@@ -14,6 +14,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 72,
         autonomy: 72,
         link: "https://www.ecoumene.com/produit/semences/bulbes-cormes-turbercules/ail-cultive/ail-music/",
+        expectedQuantity: 0,
       },
       {
         name: "Amarante",
@@ -24,6 +25,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 24,
         autonomy: 24,
         link: "https://www.ecoumene.com/produit/semences/herbacees/amarante-hopi-red-dye-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Aneth",
@@ -34,6 +36,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 48,
         autonomy: 48,
         link: "https://www.ecoumene.com/produit/semences/herbacees/aneth-de-jardin-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Arroche",
@@ -44,6 +47,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/arroche-aurora-mix-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Asperge",
@@ -54,6 +58,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 48,
         autonomy: 48,
         link: "https://www.terrepromise.ca/produit/asperge/",
+        expectedQuantity: 0,
       },
       {
         name: "Avoine et pois",
@@ -64,6 +69,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/produits-horticoles/sol-vivant/engrais/avoine-et-pois/",
+        expectedQuantity: 0,
       },
       {
         name: "Basilic",
@@ -74,6 +80,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 200,
         autonomy: 200,
         link: "https://www.ecoumene.com/produit/semences/herbacees/basilic-en-melange/",
+        expectedQuantity: 0,
       },
       {
         name: "Bette à carde",
@@ -84,6 +91,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 24,
         autonomy: 24,
         link: "https://www.ecoumene.com/produit/semences/potageres/bette-a-carde-rainbow-mix-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Betterave",
@@ -94,16 +102,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 300,
         autonomy: 300,
         link: "https://www.ecoumene.com/produit/semences/potageres/betterave-early-wonder-tall-top-bio/",
-      },
-      {
-        name: "Bok choy",
-        length: 25,
-        width: 30,
-        staggeredWidth: 27,
-        depth: 1,
-        autonomyFor10: 800,
-        autonomy: 800,
-        link: "https://www.ecoumene.com/produit/semences/potageres/chou/chinois/chou-chinois-pak-choi-shanghai-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Bourrache",
@@ -114,6 +113,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 48,
         autonomy: 48,
         link: "https://www.ecoumene.com/produit/semences/herbacees/bourrache-officinale-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Brocoli",
@@ -124,6 +124,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 20,
         autonomy: 20,
         link: "https://www.ecoumene.com/produit/semences/potageres/brocoli-de-cicco-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Camomille",
@@ -134,6 +135,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 36,
         autonomy: 36,
         link: "https://www.ecoumene.com/produit/semences/herbacees/camomille-grande-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Cantaloup",
@@ -144,6 +146,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/melon/melon-cantaloup/melon-banana-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Capucine",
@@ -154,6 +157,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 48,
         autonomy: 48,
         link: "https://www.ecoumene.com/produit/semences/herbacees/capucine-jewel-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Caraganier",
@@ -164,6 +168,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/semences/arbres-et-arbustes/caraganier-de-siberie-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Carotte",
@@ -174,6 +179,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 2000,
         autonomy: 2000,
         link: "https://www.ecoumene.com/produit/semences/potageres/carotte-red-cored-chantenay-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Cataire",
@@ -184,6 +190,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 4,
         autonomy: 4,
         link: "https://www.ecoumene.com/produit/semences/herbacees/cataire-herbe-aux-chats-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Céleri",
@@ -194,6 +201,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/celeri-plein-blanc-dore-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Cerise de terre",
@@ -204,6 +212,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/cerise-de-terre-geante-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Chervis",
@@ -214,6 +223,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 24,
         autonomy: 24,
         link: "https://www.terrepromise.ca/produit/chervis/",
+        expectedQuantity: 0,
       },
       {
         name: "Chicorée",
@@ -224,6 +234,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 80,
         autonomy: 80,
         link: "https://www.ecoumene.com/produit/semences/potageres/chicoree-sauvage-catalogna-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Chou",
@@ -234,6 +245,18 @@ export const dataSlice = createSlice({
         autonomyFor10: 80,
         autonomy: 80,
         link: "https://www.ecoumene.com/produit/semences/potageres/chou/pomme/chou-milan-de-pontoise-bio/",
+        expectedQuantity: 0,
+      },
+      {
+        name: "Chou chinois",
+        length: 25,
+        width: 30,
+        staggeredWidth: 27,
+        depth: 1,
+        autonomyFor10: 800,
+        autonomy: 800,
+        link: "https://www.ecoumene.com/produit/semences/potageres/chou/chinois/chou-chinois-pak-choi-shanghai-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Chou marin",
@@ -244,6 +267,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 24,
         autonomy: 24,
         link: "https://www.ecoumene.com/produit/semences/potageres/chou/chou-marin/chou-marin-lily-white-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Chou-fleur",
@@ -254,6 +278,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 20,
         autonomy: 20,
         link: "https://semencesduportage.com/catalogue/plante-legumiere/chou-fleur/",
+        expectedQuantity: 0,
       },
       {
         name: "Chou-rave",
@@ -264,6 +289,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 80,
         autonomy: 80,
         link: "https://www.ecoumene.com/produit/semences/potageres/chou/chou-rave/chou-rave-en-melange/",
+        expectedQuantity: 0,
       },
       {
         name: "Ciboulette",
@@ -274,6 +300,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 120,
         autonomy: 120,
         link: "https://www.ecoumene.com/produit/semences/herbacees/ciboulette-de-jardin-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Citrouille",
@@ -284,6 +311,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/semences/potageres/citrouille-cheyenne-bush-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Concombre",
@@ -294,6 +322,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 18,
         autonomy: 18,
         link: "https://www.ecoumene.com/produit/semences/potageres/concombre/concombre-americain/concombre-tante-alice-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Consoude",
@@ -304,6 +333,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 6,
         autonomy: 6,
         link: "https://www.terrepromise.ca/produit/consoude/",
+        expectedQuantity: 0,
       },
       {
         name: "Coriandre",
@@ -314,6 +344,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/herbacees/coriandre-santo-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Courge musqué",
@@ -324,6 +355,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 24,
         autonomy: 24,
         link: "https://www.ecoumene.com/produit/semences/potageres/courge-ponca-baby-butternut-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Courgette",
@@ -334,6 +366,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/semences/potageres/courgette-ronde-de-nice-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Cresson",
@@ -344,6 +377,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 200,
         autonomy: 200,
         link: "https://www.ecoumene.com/produit/semences/herbacees/cresson-alenois-frise-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Échalote de Sainte-Anne",
@@ -354,6 +388,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/echalote-de-sainte-anne/",
+        expectedQuantity: 0,
       },
       {
         name: "Échinacée",
@@ -364,6 +399,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 24,
         autonomy: 24,
         link: "https://www.ecoumene.com/produit/semences/herbacees/echinacee-pourpre-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Épinard",
@@ -374,16 +410,18 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/epinard-bloomsdale-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Fraise",
-        length: 60,
-        width: 100,
-        staggeredWidth: 95,
+        length: 50,
+        width: 60,
+        staggeredWidth: 55,
         depth: 0,
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/herbacees/fraisier-alpin-yellow-wonder/",
+        expectedQuantity: 0,
       },
       {
         name: "Haricot grimpant",
@@ -394,6 +432,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 100,
         autonomy: 100,
         link: "https://www.ecoumene.com/produit/semences/potageres/haricot/grimpant/haricot-grand-maman-dinel-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Haricot nain",
@@ -404,6 +443,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 200,
         autonomy: 200,
         link: "https://www.ecoumene.com/produit/semences/potageres/haricot/nain/haricot-fortin-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Haricot sec",
@@ -414,6 +454,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 800,
         autonomy: 800,
         link: "https://www.ecoumene.com/produit/semences/potageres/haricot/nain/haricot-hopi-black-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Kale",
@@ -424,6 +465,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 72,
         autonomy: 72,
         link: "https://www.ecoumene.com/produit/semences/potageres/chou/frise-kale/chou-frise-dwarf-blue-scotch-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Laitue",
@@ -434,6 +476,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 600,
         autonomy: 600,
         link: "https://www.ecoumene.com/produit/semences/potageres/laitue/laitue-pommee/laitue-pommee-grosse-blonde-paresseuse-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Lavande",
@@ -444,6 +487,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 24,
         autonomy: 24,
         link: "https://www.ecoumene.com/produit/semences/herbacees/lavande-officinale-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Maïs",
@@ -454,6 +498,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/mais/mais-sucre/mais-golden-bantam-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Maïs à farine",
@@ -464,6 +509,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 120,
         autonomy: 120,
         link: "https://www.ecoumene.com/produit/semences/potageres/mais/mais-a-moudre/mais-abenaki-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Marjolaine",
@@ -474,6 +520,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/herbacees/marjolaine-des-jardins-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Melon",
@@ -484,6 +531,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/melon/melon-deau/melon-sweet-siberian-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Menthe",
@@ -494,6 +542,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 6,
         autonomy: 6,
         link: "https://www.whperron.com/fr/9188-menthe-verte.html",
+        expectedQuantity: 0,
       },
       {
         name: "Mesclun",
@@ -504,6 +553,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/mesclun-de-cruciferes-de-base-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Millepertuis",
@@ -514,6 +564,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/semences/herbacees/millepertuis-helos-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Molène",
@@ -524,6 +575,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/semences/herbacees/molene-dolympe-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Monarde",
@@ -534,6 +586,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 18,
         autonomy: 18,
         link: "https://www.ecoumene.com/produit/semences/herbacees/monarde-panorama-en-melange-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Moutarde",
@@ -544,6 +597,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 400,
         autonomy: 400,
         link: "https://www.ecoumene.com/produit/semences/potageres/mesclun-de-moutardes-piquantes-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Navet",
@@ -554,6 +608,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 400,
         autonomy: 400,
         link: "https://www.ecoumene.com/produit/semences/potageres/navet-blanc-a-collet-violet-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Oignon",
@@ -564,6 +619,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 600,
         autonomy: 600,
         link: "https://www.ecoumene.com/produit/semences/potageres/oignon-patate-3-bulbes/",
+        expectedQuantity: 0,
       },
       {
         name: "Oignon vert",
@@ -574,6 +630,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/oignon/oignon-a-botteler/oignon-a-botteler-parade-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Origan",
@@ -584,6 +641,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 8,
         autonomy: 8,
         link: "https://www.ecoumene.com/produit/semences/herbacees/origan-commun-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Ortie",
@@ -594,6 +652,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/produits-de-la-foret/plantes-foret/simples/feuilles/urtica-dioica/",
+        expectedQuantity: 0,
       },
       {
         name: "Oseille",
@@ -604,6 +663,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/semences/potageres/oseille-de-jardin-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Panais",
@@ -614,6 +674,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 300,
         autonomy: 300,
         link: "https://www.ecoumene.com/produit/semences/potageres/panais-halblange-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Persil",
@@ -624,6 +685,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 36,
         autonomy: 36,
         link: "https://www.ecoumene.com/produit/semences/herbacees/persil-italien-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Piment",
@@ -634,6 +696,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 8,
         autonomy: 8,
         link: "https://www.ecoumene.com/produit/semences/potageres/piment/chaud/piment-gorria-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Plantain",
@@ -644,6 +707,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 8,
         autonomy: 8,
         link: "https://www.ecoumene.com/produit/semences/herbacees/plantain-lanceole-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Poireau",
@@ -654,6 +718,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 120,
         autonomy: 120,
         link: "https://www.ecoumene.com/produit/semences/potageres/poireau-bleu-de-solaise-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Pois des neiges",
@@ -664,6 +729,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 400,
         autonomy: 400,
         link: "https://www.ecoumene.com/produit/semences/potageres/pois/pois-des-neiges/pois-golden-sweet-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Pois mange-tout",
@@ -674,6 +740,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 400,
         autonomy: 400,
         link: "https://www.ecoumene.com/produit/semences/potageres/pois/pois-mange-tout/pois-cascadia-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Poivron",
@@ -684,6 +751,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 48,
         autonomy: 48,
         link: "https://www.ecoumene.com/produit/semences/potageres/poivron/type-mini/poivron-doe-hill-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Pomme de terre",
@@ -694,6 +762,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 120,
         autonomy: 120,
         link: "https://www.ecoumene.com/produit/semences/herbacees/apios-americana/",
+        expectedQuantity: 0,
       },
       {
         name: "Radis",
@@ -704,6 +773,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 400,
         autonomy: 400,
         link: "https://www.ecoumene.com/produit/semences/potageres/radis/radis-de-printemps/radis-petit-dejeuner-francais-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Radis d'hiver",
@@ -714,6 +784,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/radis/radis-dhiver/radis-melon-deau-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Raifort",
@@ -724,6 +795,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 2,
         autonomy: 2,
         link: "https://www.terrepromise.ca/produit/raifort-vivace/",
+        expectedQuantity: 0,
       },
       {
         name: "Rhubarbe",
@@ -734,6 +806,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/rhubarbe-victoria-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Roquette",
@@ -744,6 +817,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/roquette-italienne-sylvetta-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Rutabaga",
@@ -754,6 +828,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 400,
         autonomy: 400,
         link: "https://www.ecoumene.com/produit/semences/potageres/rutabaga-joan-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Sarriette",
@@ -764,6 +839,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/herbacees/sarriette-ancienne-dacadie-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Sauge",
@@ -774,6 +850,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 4,
         autonomy: 4,
         link: "https://www.ecoumene.com/produit/semences/herbacees/sauge-officinale-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Scorsonère",
@@ -784,6 +861,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/semences/herbacees/scorsonere-hoffmans-schwarze-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Soja edamame",
@@ -794,6 +872,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/soja-edamame-envy-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Souchet",
@@ -804,6 +883,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 48,
         autonomy: 48,
         link: "https://www.ecoumene.com/produit/semences/potageres/souchet-comestible-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Souci",
@@ -814,6 +894,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 24,
         autonomy: 24,
         link: "https://www.ecoumene.com/produit/semences/herbacees/souci-en-melange-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Thym",
@@ -824,6 +905,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 12,
         autonomy: 12,
         link: "https://www.ecoumene.com/produit/semences/herbacees/thym-serpolet-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Tomate",
@@ -834,6 +916,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 54,
         autonomy: 54,
         link: "https://www.ecoumene.com/produit/semences/potageres/tomate/type-beefsteak/tomate-meme-de-beauce-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Tomate cerise",
@@ -844,6 +927,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 0,
         autonomy: 0,
         link: "https://www.ecoumene.com/produit/semences/potageres/tomate/type-cerise/tomate-petit-moineau-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Tomate italienne",
@@ -854,6 +938,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 18,
         autonomy: 18,
         link: "https://www.ecoumene.com/produit/semences/potageres/tomate/type-italienne/tomate-amish-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Topinambour",
@@ -864,6 +949,7 @@ export const dataSlice = createSlice({
         autonomyFor10: 48,
         autonomy: 48,
         link: "https://www.ecoumene.com/produit/semences/herbacees/topinambour-fuseau-rouge-bio/",
+        expectedQuantity: 0,
       },
       {
         name: "Tournesol",
@@ -874,10 +960,27 @@ export const dataSlice = createSlice({
         autonomyFor10: 48,
         autonomy: 48,
         link: "https://www.ecoumene.com/produit/semences/herbacees/tournesol-arikara-bio/",
+        expectedQuantity: 0,
       },
     ],
   },
   reducers: {
+    calculateExpectedQuantity: (state, { payload }) => {
+      if (state.plants[0].expectedQuantity > 0) return;
+
+      const beds = payload.plots
+        .map((plot) => [plot.beds.first, plot.beds.last])
+        .flat()
+        .flat();
+
+      state.plants = state.plants.map(({ name, ...rest }) => ({
+        name,
+        ...rest,
+        expectedQuantity: beds
+          .filter((bed) => bed.name === name)
+          .reduce((acc, bed) => acc + bed.plantQuantity?.quantity, 0),
+      }));
+    },
     convertPlantAutonomies: (state, { payload }) => {
       state.autonomy = payload;
       if (isNaN(state.autonomy)) {
@@ -895,6 +998,7 @@ export const dataSlice = createSlice({
   },
 });
 
-export const { convertPlantAutonomies } = dataSlice.actions;
+export const { convertPlantAutonomies, calculateExpectedQuantity } =
+  dataSlice.actions;
 
 export default dataSlice.reducer;

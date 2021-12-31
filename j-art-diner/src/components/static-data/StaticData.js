@@ -2,13 +2,22 @@
 // noinspection ES6UnusedImports
 import { Heading, Input, jsx, Label, Link, Text } from "theme-ui";
 import { useDispatch, useSelector } from "react-redux";
-import React from "react";
+import React, { useEffect } from "react";
 import Table from "../Table";
-import { convertPlantAutonomies } from "./dataSlice";
+import { calculateExpectedQuantity, convertPlantAutonomies } from "./dataSlice";
+import { calculateBedAmount } from "../rotate/rotateSlice";
 
 const StaticData = () => {
   const dataState = useSelector((state) => state.data);
+  const rotateState = useSelector((state) => state.rotate);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(calculateBedAmount(dataState));
+  }, [dispatch, dataState]);
+
+  dispatch(calculateExpectedQuantity(rotateState));
+
   const changeAutonomy = ({ target: { value } }) => {
     dispatch(convertPlantAutonomies(value));
   };
@@ -67,6 +76,10 @@ const StaticData = () => {
               ),
               accessor: "autonomy",
               disableSortBy: true,
+            },
+            {
+              header: "Quantité prévue",
+              accessor: "expectedQuantity",
             },
           ],
           []
