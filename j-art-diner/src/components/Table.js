@@ -23,7 +23,7 @@ function GlobalFilter({
 
   return (
     <Input
-      value={value || ""}
+      value={value?.toString() ?? ""}
       onChange={(e) => {
         setValue(e.target.value);
         onChange(e.target.value);
@@ -60,10 +60,10 @@ const Table = ({ columns, data }) => {
     <table {...getTableProps()} width="100%" sx={{ minWidth: 768 }}>
       <thead>
         <tr>
-          <th colSpan={columns.length} sx={{ textAlign: "left" }}>
+          <th colSpan={columns.length}>
             <GlobalFilter
-              preGlobalFilteredRows={preGlobalFilteredRows}
               globalFilter={state.globalFilter}
+              preGlobalFilteredRows={preGlobalFilteredRows}
               setGlobalFilter={setGlobalFilter}
             />
           </th>
@@ -72,8 +72,8 @@ const Table = ({ columns, data }) => {
           <tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => (
               <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                {column.render("header")}{" "}
-                {column.isSorted ? (column.isSortedDesc ? " 🔽" : " 🔼") : ""}
+                {column.render("Header")}
+                {column.isSorted && (column.isSortedDesc ? " 🔽" : " 🔼")}
               </th>
             ))}
           </tr>
@@ -93,7 +93,7 @@ const Table = ({ columns, data }) => {
       </tbody>
       <tfoot>
         <tr>
-          <td colSpan={6}>
+          <td colSpan={columns.length}>
             <Button
               onClick={() => gotoPage(0)}
               disabled={!canPreviousPage}
@@ -122,12 +122,10 @@ const Table = ({ columns, data }) => {
             >
               {"⫸"}
             </Button>{" "}
-            <span>
-              Page{" "}
-              <strong>
-                {state.pageIndex + 1} de {pageOptions.length}
-              </strong>{" "}
-            </span>
+            Page{" "}
+            <strong>
+              {state.pageIndex + 1} de {pageOptions.length}
+            </strong>{" "}
             <div sx={{ display: "inline-block", width: 96 }}>
               <Select
                 value={state.pageSize}

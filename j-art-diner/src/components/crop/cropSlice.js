@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const dataSlice = createSlice({
-  name: "data",
+export const cropSlice = createSlice({
+  name: "crop",
   initialState: {
     autonomy: 10,
-    plants: [
+    crops: [
       {
         name: "Ail",
         length: 12,
@@ -14,6 +14,17 @@ export const dataSlice = createSlice({
         autonomyFor10: 72,
         autonomy: 72,
         link: "https://www.ecoumene.com/produit/semences/bulbes-cormes-turbercules/ail-cultive/ail-music/",
+        expectedQuantity: 0,
+      },
+      {
+        name: "Ail des bois",
+        length: 12,
+        width: 15,
+        staggeredWidth: 14,
+        depth: 5,
+        autonomyFor10: 0,
+        autonomy: 0,
+        link: "",
         expectedQuantity: 0,
       },
       {
@@ -966,44 +977,37 @@ export const dataSlice = createSlice({
   },
   reducers: {
     calculateExpectedQuantity: (state, { payload }) => {
-      if (state.plants[0].expectedQuantity > 0) return;
+      if (state.crops[0].expectedQuantity > 0) return;
 
-      const beds = payload.plots
+      const beds = payload.annuals
         .map((plot) => [plot.beds.first, plot.beds.last])
         .flat()
-        .flat();
-      const perennials = payload.perennials.map((plot) => plot.beds).flat();
+        .flat()
+        .concat(payload.perennials.map((plot) => plot.beds).flat());
 
-      state.plants = state.plants.map(({ name, ...rest }) => ({
+      state.crops = state.crops.map(({ name, ...rest }) => ({
         name,
         ...rest,
-        expectedQuantity:
-          beds
-            .filter((bed) => bed.name === name)
-            .reduce((acc, bed) => acc + bed.plantQuantity?.quantity, 0) +
-          perennials
-            .filter((bed) => bed.name === name)
-            .reduce((acc, bed) => acc + bed.plantQuantity?.quantity, 0),
+        expectedQuantity: beds
+          .filter((bed) => bed.name === name)
+          .reduce((acc, bed) => acc + bed.crop?.quantity ?? 0, 0),
       }));
     },
-    convertPlantAutonomies: (state, { payload }) => {
+    convertAutonomy: (state, { payload }) => {
       state.autonomy = payload;
       if (isNaN(state.autonomy)) {
         state.autonomy = 10;
       }
 
-      state.plants = state.plants.map(
-        ({ autonomy, autonomyFor10, ...rest }) => ({
-          ...rest,
-          autonomyFor10,
-          autonomy: Math.round((autonomyFor10 / 10) * state.autonomy),
-        })
-      );
+      state.crops = state.crops.map(({ autonomy, autonomyFor10, ...rest }) => ({
+        ...rest,
+        autonomyFor10,
+        autonomy: Math.round((autonomyFor10 / 10) * state.autonomy),
+      }));
     },
   },
 });
 
-export const { convertPlantAutonomies, calculateExpectedQuantity } =
-  dataSlice.actions;
+export const { convertAutonomy, calculateExpectedQuantity } = cropSlice.actions;
 
-export default dataSlice.reducer;
+export default cropSlice.reducer;

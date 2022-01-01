@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import rotateReducer from "./components/rotate/rotateSlice";
-import dataReducer from "./components/static-data/dataSlice";
+import plotReducer from "./components/plot/plotSlice";
+import cropReducer from "./components/crop/cropSlice";
 
 export default configureStore({
   reducer: {
-    rotate: rotateReducer,
-    data: dataReducer,
+    plot: plotReducer,
+    crop: cropReducer,
   },
 });

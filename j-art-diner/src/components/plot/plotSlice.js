@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const rotateSlice = createSlice({
-  name: "rotate",
+export const plotSlice = createSlice({
+  name: "plot",
   initialState: {
-    plots: [
+    annuals: [
       {
         name: "Solanacées",
         length: 655,
@@ -13,7 +13,10 @@ export const rotateSlice = createSlice({
           last: [
             { name: "Tomate cerise", quantity: 5 },
             { name: "Cerise de terre", quantity: 2 },
-            { name: "Piment", quantity: 1 },
+            {
+              name: "Piment",
+              quantity: 1,
+            },
             { name: "Poivron", quantity: 2 },
             { name: "Melon", quantity: 6 },
           ],
@@ -27,23 +30,38 @@ export const rotateSlice = createSlice({
           first: [
             { name: "Haricot grimpant", quantity: 2 },
             { name: "Radis", quantity: 1 },
-            { name: "Carotte", quantity: 2 },
+            {
+              name: "Carotte",
+              quantity: 2,
+            },
             { name: "Navet", quantity: 1 },
             { name: "Roquette", quantity: 2 },
-            { name: "Laitue", quantity: 2 },
+            {
+              name: "Laitue",
+              quantity: 2,
+            },
             { name: "Betterave", quantity: 2 },
             { name: "Haricot nain", quantity: 4 },
           ],
           last: [
             { name: "Épinard", quantity: 2 },
             { name: "Laitue", quantity: 1 },
-            { name: "Roquette", quantity: 1 },
+            {
+              name: "Roquette",
+              quantity: 1,
+            },
             { name: "Laitue", quantity: 1 },
             { name: "Moutarde", quantity: 1 },
-            { name: "Céleri", quantity: 2 },
+            {
+              name: "Céleri",
+              quantity: 2,
+            },
             { name: "Haricot grimpant", quantity: 2 },
             { name: "Roquette", quantity: 2 },
-            { name: "Épinard", quantity: 4 },
+            {
+              name: "Épinard",
+              quantity: 4,
+            },
           ],
         },
       },
@@ -56,7 +74,10 @@ export const rotateSlice = createSlice({
           last: [
             { name: "Brocoli", quantity: 4 },
             { name: "Chou", quantity: 3 },
-            { name: "Courgette", quantity: 2 },
+            {
+              name: "Courgette",
+              quantity: 2,
+            },
             { name: "Chou-fleur", quantity: 5 },
             { name: "Chou-rave", quantity: 2 },
           ],
@@ -70,18 +91,30 @@ export const rotateSlice = createSlice({
           first: [
             { name: "Carotte", quantity: 4 },
             { name: "Coriandre", quantity: 1 },
-            { name: "Navet", quantity: 1 },
+            {
+              name: "Navet",
+              quantity: 1,
+            },
             { name: "Roquette", quantity: 1 },
             { name: "Radis", quantity: 1 },
-            { name: "Carotte", quantity: 2 },
+            {
+              name: "Carotte",
+              quantity: 2,
+            },
             { name: "Chicorée", quantity: 1 },
             { name: "Pois des neiges", quantity: 4 },
-            { name: "Laitue", quantity: 1 },
+            {
+              name: "Laitue",
+              quantity: 1,
+            },
           ],
           last: [
             { name: "Laitue", quantity: 4 },
             { name: "Mesclun", quantity: 9 },
-            { name: "Chou chinois", quantity: 1 },
+            {
+              name: "Chou chinois",
+              quantity: 1,
+            },
             { name: "Chou", quantity: 2 },
           ],
         },
@@ -106,7 +139,10 @@ export const rotateSlice = createSlice({
           first: [
             { name: "Mesclun", quantity: 4 },
             { name: "Haricot grimpant", quantity: 4 },
-            { name: "Carotte", quantity: 4 },
+            {
+              name: "Carotte",
+              quantity: 4,
+            },
             { name: "Laitue", quantity: 4 },
           ],
           last: [
@@ -126,7 +162,10 @@ export const rotateSlice = createSlice({
           first: [
             { name: "Brocoli", quantity: 3 },
             { name: "Chou chinois", quantity: 1 },
-            { name: "Chou-rave", quantity: 1 },
+            {
+              name: "Chou-rave",
+              quantity: 1,
+            },
             { name: "Kale", quantity: 1 },
             { name: "Courgette", quantity: 8 },
             { name: "Chou-fleur", quantity: 2 },
@@ -142,16 +181,25 @@ export const rotateSlice = createSlice({
           first: [
             { name: "Mesclun", quantity: 2 },
             { name: "Carotte", quantity: 2 },
-            { name: "Pois des neiges", quantity: 4 },
+            {
+              name: "Pois des neiges",
+              quantity: 4,
+            },
             { name: "Betterave", quantity: 1 },
             { name: "Navet", quantity: 1 },
-            { name: "Épinard", quantity: 4 },
+            {
+              name: "Épinard",
+              quantity: 4,
+            },
             { name: "Mesclun", quantity: 2 },
           ],
           last: [
             { name: "Carotte", quantity: 2 },
             { name: "Mesclun", quantity: 11 },
-            { name: "Carotte", quantity: 3 },
+            {
+              name: "Carotte",
+              quantity: 3,
+            },
           ],
         },
       },
@@ -163,7 +211,10 @@ export const rotateSlice = createSlice({
           first: [
             { name: "Oignon vert", quantity: 6 },
             { name: "Poireau", quantity: 4 },
-            { name: "Oignon", quantity: 6 },
+            {
+              name: "Oignon",
+              quantity: 6,
+            },
           ],
           last: [{ name: "Avoine et pois", quantity: 16 }],
         },
@@ -177,10 +228,16 @@ export const rotateSlice = createSlice({
           last: [
             { name: "Carotte", quantity: 2 },
             { name: "Haricot grimpant", quantity: 2 },
-            { name: "Radis d'hiver", quantity: 3 },
+            {
+              name: "Radis d'hiver",
+              quantity: 3,
+            },
             { name: "Chicorée", quantity: 1 },
             { name: "Kale", quantity: 2 },
-            { name: "Chou chinois", quantity: 2 },
+            {
+              name: "Chou chinois",
+              quantity: 2,
+            },
             { name: "Radis", quantity: 1 },
             { name: "Persil", quantity: 1 },
             { name: "Navet", quantity: 2 },
@@ -207,18 +264,30 @@ export const rotateSlice = createSlice({
           first: [
             { name: "Carotte", quantity: 4 },
             { name: "Coriandre", quantity: 1 },
-            { name: "Navet", quantity: 1 },
+            {
+              name: "Navet",
+              quantity: 1,
+            },
             { name: "Roquette", quantity: 1 },
             { name: "Radis", quantity: 1 },
-            { name: "Betterave", quantity: 2 },
+            {
+              name: "Betterave",
+              quantity: 2,
+            },
             { name: "Chicorée", quantity: 1 },
             { name: "Pois mange-tout", quantity: 4 },
-            { name: "Laitue", quantity: 1 },
+            {
+              name: "Laitue",
+              quantity: 1,
+            },
           ],
           last: [
             { name: "Laitue", quantity: 4 },
             { name: "Mesclun", quantity: 9 },
-            { name: "Chou chinois", quantity: 1 },
+            {
+              name: "Chou chinois",
+              quantity: 1,
+            },
             { name: "Chou", quantity: 2 },
           ],
         },
@@ -292,7 +361,10 @@ export const rotateSlice = createSlice({
         beds: [
           { name: "Échinacée", quantity: 6 },
           { name: "Oseille", quantity: 2 },
-          { name: "Asperge", quantity: 2 },
+          {
+            name: "Asperge",
+            quantity: 2,
+          },
           { name: "Millepertuis", quantity: 6 },
         ],
       },
@@ -311,40 +383,50 @@ export const rotateSlice = createSlice({
           { name: "Rhubarbe", quantity: 11 },
         ],
       },
+      {
+        name: "C2",
+        length: 150,
+        width: 750,
+        beds: [
+          { name: "Ail des bois", quantity: 5 },
+          { name: "Plantain", quantity: 11 },
+        ],
+      },
     ],
   },
   reducers: {
-    calculateBedAmount: (state, { payload }) => {
-      const calculateAmount = (bedLength, bedWidth, name, number) => {
-        const data = payload.plants.find(
-          (plant) => plant.name === name.replace(" en dormance", "")
+    calculateCropQuantityPerBed: (state, { payload }) => {
+      const calculate = (cropName, plotLength, plotWidth, bedQuantity) => {
+        const crop = payload.crops.find(
+          (crop) => crop.name === cropName.replace(" en dormance", "")
         );
-        const rows = (number * bedLength) / 16 / data.length;
-        const cols = Math.ceil(bedWidth / data.staggeredWidth);
-        const quantity = Math.round(rows * cols);
+
+        const rows = (bedQuantity * (plotLength / 16)) / crop.length;
+        const cols = Math.ceil(plotWidth / crop.staggeredWidth);
         return {
-          rows: rows,
-          rowsInCm: rows * data.length,
+          rows,
+          rowsInCm: rows * crop.length,
           cols,
-          colsInCm: (cols - 1) * data.staggeredWidth,
-          quantity,
+          colsInCm: (cols - 1) * crop.staggeredWidth,
+          quantity: Math.round(rows * cols),
         };
       };
 
-      state.plots = state.plots.map(({ length, width, beds, ...rest }) => ({
+      state.annuals = state.annuals.map(({ length, width, beds, ...rest }) => ({
         ...rest,
         length,
         width,
         beds: {
-          first: beds.first.map(({ name, quantity }) => ({
+          first: beds.first.map(({ name, quantity, ...rest }) => ({
+            ...rest,
             name,
             quantity,
-            plantQuantity: calculateAmount(length, width, name, quantity),
+            crop: calculate(name, length, width, quantity),
           })),
           last: beds.last.map(({ name, quantity }) => ({
             name,
             quantity,
-            plantQuantity: calculateAmount(length, width, name, quantity),
+            crop: calculate(name, length, width, quantity),
           })),
         },
       }));
@@ -354,10 +436,11 @@ export const rotateSlice = createSlice({
           ...rest,
           length,
           width,
-          beds: beds.map(({ name, quantity }) => ({
+          beds: beds.map(({ name, quantity, ...rest }) => ({
+            ...rest,
             name,
             quantity,
-            plantQuantity: calculateAmount(length, width, name, quantity),
+            crop: calculate(name, length, width, quantity),
           })),
         })
       );
@@ -365,6 +448,6 @@ export const rotateSlice = createSlice({
   },
 });
 
-export const { calculateBedAmount } = rotateSlice.actions;
+export const { calculateCropQuantityPerBed } = plotSlice.actions;
 
-export default rotateSlice.reducer;
+export default plotSlice.reducer;

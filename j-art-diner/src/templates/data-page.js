@@ -1,20 +1,20 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
 import { Container, jsx } from "theme-ui";
-import Plan from "../components/rotate/Plan";
+import Plan from "../components/plot/Plan";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PropTypes from "prop-types";
 import { Provider } from "react-redux";
 import store from "../store";
-import StaticData from "../components/static-data/StaticData";
+import Crops from "../components/crop/Crops";
 
 const DataPage = () => {
   return (
     <Provider store={store}>
       <Layout>
         <Container>
-          <StaticData />
+          <Crops />
           <Plan />
         </Container>
       </Layout>

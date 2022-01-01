@@ -4,29 +4,29 @@ import { Heading, Input, jsx, Label, Link, Text } from "theme-ui";
 import { useDispatch, useSelector } from "react-redux";
 import React, { useEffect } from "react";
 import Table from "../Table";
-import { calculateExpectedQuantity, convertPlantAutonomies } from "./dataSlice";
-import { calculateBedAmount } from "../rotate/rotateSlice";
+import { calculateExpectedQuantity, convertAutonomy } from "./cropSlice";
+import { calculateCropQuantityPerBed } from "../plot/plotSlice";
 
-const StaticData = () => {
-  const dataState = useSelector((state) => state.data);
-  const rotateState = useSelector((state) => state.rotate);
+const Crops = () => {
+  const cropState = useSelector((state) => state.crop);
+  const plotState = useSelector((state) => state.plot);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(calculateBedAmount(dataState));
-  }, [dispatch, dataState]);
+    dispatch(calculateCropQuantityPerBed(cropState));
+  }, [dispatch, cropState]);
 
-  dispatch(calculateExpectedQuantity(rotateState));
+  dispatch(calculateExpectedQuantity(plotState));
 
   const changeAutonomy = ({ target: { value } }) => {
-    dispatch(convertPlantAutonomies(value));
+    dispatch(convertAutonomy(value));
   };
 
   return (
-    <span>
-      <Heading as="h2">Données des plantes</Heading>
+    <div>
+      <Heading as="h2">Culture</Heading>
       <Text>
-        Mes données de jardin sont principalement basés sur le site des{" "}
+        Ces données sont principalement basés sur le site des{" "}
         <Link href="https://www.ecoumene.com/">jardins de l'écoumene</Link> et
         du livre{" "}
         <Link href="https://lejardiniermaraicher.com/publications/category-publications-le-jardinier-maraicher/">
@@ -38,30 +38,30 @@ const StaticData = () => {
         columns={React.useMemo(
           () => [
             {
-              header: "Nom",
+              Header: "Nom",
               accessor: "name",
               Cell: ({ row: { original } }) => (
                 <Link href={original.link}>{original.name}</Link>
               ),
             },
             {
-              header: "Longueur",
+              Header: "Longueur",
               accessor: "length",
             },
             {
-              header: "Largeur",
+              Header: "Largeur",
               accessor: "width",
             },
             {
-              header: "si quinconce",
+              Header: "si quinconce",
               accessor: "staggeredWidth",
             },
             {
-              header: "Profondeur",
+              Header: "Profondeur",
               accessor: "depth",
             },
             {
-              header: () => (
+              Header: () => (
                 <Label>
                   Autonomie pour{" "}
                   <Input
@@ -69,7 +69,7 @@ const StaticData = () => {
                     min={1}
                     onChange={changeAutonomy}
                     placeholder="personnes"
-                    sx={{ lineHeight: 1, height: 24, width: 64 }}
+                    sx={{ lineHeight: 1, height: 24, width: 48 }}
                     type="number"
                   />
                 </Label>
@@ -78,16 +78,16 @@ const StaticData = () => {
               disableSortBy: true,
             },
             {
-              header: "Quantité prévue",
+              Header: "Planifiées",
               accessor: "expectedQuantity",
             },
           ],
           []
         )}
-        data={React.useMemo(() => dataState.plants, [dataState])}
+        data={React.useMemo(() => cropState.crops, [cropState])}
       />
-    </span>
+    </div>
   );
 };
 
-export default StaticData;
+export default Crops;

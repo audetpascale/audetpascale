@@ -1,49 +1,39 @@
 /** @jsx jsx */
 // noinspection ES6UnusedImports
-import { Box, Card, Grid, Heading, jsx } from "theme-ui";
+import { Card, Grid, Heading, jsx } from "theme-ui";
 import PropTypes from "prop-types";
 import Bed from "./Bed";
 
-const Plot = ({ plot }) => {
+const Plot = ({ plot, ...rest }) => {
   let grid;
   if (Array.isArray(plot.beds)) {
     grid = (
       <Grid
+        {...rest}
         columns={1}
         sx={{
           fontWeight: "bold",
           textAlign: "center",
           fontFamily: "system-ui",
         }}
-        key={`${plot.name}.G`}
       >
         <Card>
           {plot.beds.map((bed, index) => (
             <Bed key={index} bed={bed} length={plot.length / 16} />
           ))}
         </Card>
-        <Box>
-          Total:{" "}
-          {Math.round(
-            plot.beds.reduce(
-              (total, bed) =>
-                bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
-              0
-            )
-          )}
-        </Box>
       </Grid>
     );
   } else {
     grid = (
       <Grid
+        {...rest}
         columns={2}
         sx={{
           fontWeight: "bold",
           textAlign: "center",
           fontFamily: "system-ui",
         }}
-        key={`${plot.name}.G`}
       >
         <Card>
           {plot.beds.first.map((bed, index) => (
@@ -55,35 +45,17 @@ const Plot = ({ plot }) => {
             <Bed key={index} bed={bed} length={plot.length / 16} />
           ))}
         </Card>
-        <Box>
-          Total:{" "}
-          {Math.round(
-            plot.beds.first.reduce(
-              (total, bed) =>
-                bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
-              0
-            )
-          )}
-        </Box>
-        <Box>
-          Total:{" "}
-          {Math.round(
-            plot.beds.last.reduce(
-              (total, bed) =>
-                bed.plantQuantity && bed.plantQuantity.rowsInCm + total,
-              0
-            )
-          )}
-        </Box>
       </Grid>
     );
   }
-  return [
-    <Heading as="h3" key={`${plot.name}.H`}>
-      {plot.name} : L {plot.length}cm x l {plot.width}cm
-    </Heading>,
-    grid,
-  ];
+  return (
+    <div>
+      <Heading as="h3" key={`${plot.name}.H`}>
+        {plot.name} : L {plot.length}cm x l {plot.width}cm
+      </Heading>
+      {grid}
+    </div>
+  );
 };
 
 export default Plot;
