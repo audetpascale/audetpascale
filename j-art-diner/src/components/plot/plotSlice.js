@@ -5,20 +5,15 @@ export const plotSlice = createSlice({
   initialState: {
     annuals: [
       {
-        name: "Solanacées",
+        name: "Cucurbitacées",
         length: 655,
         width: 90,
         beds: {
           first: [{ name: "Avoine et pois", quantity: 16 }],
           last: [
-            { name: "Tomate cerise", quantity: 5 },
-            { name: "Cerise de terre", quantity: 2 },
-            {
-              name: "Piment",
-              quantity: 1,
-            },
-            { name: "Poivron", quantity: 2 },
-            { name: "Melon", quantity: 6 },
+            { name: "Citrouille", quantity: 4 },
+            { name: "Courge musqué", quantity: 6 },
+            { name: "Concombre", quantity: 6 },
           ],
         },
       },
@@ -66,7 +61,7 @@ export const plotSlice = createSlice({
         },
       },
       {
-        name: "Cuccurbites et crucifères primeurs",
+        name: "Cucurbitacées et crucifères primeurs",
         length: 655,
         width: 90,
         beds: {
@@ -120,13 +115,15 @@ export const plotSlice = createSlice({
         },
       },
       {
-        name: "Ail",
+        name: "Liliacées",
         length: 585,
         width: 90,
         beds: {
           first: [
             { name: "Ail", quantity: 4 },
-            { name: "Échalote de Sainte-Anne", quantity: 12 },
+            { name: "Échalote de Sainte-Anne", quantity: 4 },
+            { name: "Poireau", quantity: 3 },
+            { name: "Oignon", quantity: 5 },
           ],
           last: [{ name: "Avoine et pois", quantity: 16 }],
         },
@@ -149,28 +146,26 @@ export const plotSlice = createSlice({
             { name: "Ail en dormance", quantity: 4 },
             {
               name: "Échalote de Sainte-Anne en dormance",
-              quantity: 12,
+              quantity: 4,
             },
           ],
         },
       },
       {
-        name: "Cuccurbites et crucifères primeurs",
+        name: "Solanacées",
         length: 585,
         width: 90,
         beds: {
-          first: [
-            { name: "Brocoli", quantity: 3 },
-            { name: "Chou chinois", quantity: 1 },
+          first: [{ name: "Avoine et pois", quantity: 16 }],
+          last: [
+            { name: "Tomate cerise", quantity: 7 },
+            { name: "Cerise de terre", quantity: 3 },
             {
-              name: "Chou-rave",
-              quantity: 1,
+              name: "Piment",
+              quantity: 3,
             },
-            { name: "Kale", quantity: 1 },
-            { name: "Courgette", quantity: 8 },
-            { name: "Chou-fleur", quantity: 2 },
+            { name: "Poivron", quantity: 3 },
           ],
-          last: [{ name: "Avoine et pois", quantity: 16 }],
         },
       },
       {
@@ -204,17 +199,20 @@ export const plotSlice = createSlice({
         },
       },
       {
-        name: "Liliacées",
+        name: "Cucurbitacées et crucifères primeurs",
         length: 585,
         width: 90,
         beds: {
           first: [
-            { name: "Oignon vert", quantity: 6 },
-            { name: "Poireau", quantity: 4 },
+            { name: "Brocoli", quantity: 3 },
+            { name: "Chou chinois", quantity: 1 },
             {
-              name: "Oignon",
-              quantity: 6,
+              name: "Chou-rave",
+              quantity: 1,
             },
+            { name: "Kale", quantity: 1 },
+            { name: "Courgette", quantity: 8 },
+            { name: "Chou-fleur", quantity: 2 },
           ],
           last: [{ name: "Avoine et pois", quantity: 16 }],
         },
@@ -295,67 +293,34 @@ export const plotSlice = createSlice({
     ],
     perennials: [
       {
-        name: "A5",
-        length: 400,
-        width: 90,
-        beds: [{ name: "Asperge", quantity: 16 }],
-      },
-      {
-        name: "BG1",
-        length: 75,
-        width: 17.5,
-        beds: [{ name: "Thym", quantity: 16 }],
-      },
-      {
-        name: "BN1",
-        length: 30,
-        width: 30,
-        beds: [{ name: "Ciboulette", quantity: 16 }],
-      },
-      {
-        name: "BN2",
-        length: 30,
-        width: 30,
-        beds: [{ name: "Ciboulette", quantity: 16 }],
-      },
-      {
-        name: "BN3",
-        length: 30,
-        width: 30,
-        beds: [{ name: "Menthe", quantity: 16 }],
-      },
-      {
-        name: "BN4",
-        length: 30,
-        width: 30,
-        beds: [{ name: "Ciboulette", quantity: 16 }],
-      },
-      {
-        name: "BR1",
-        length: 35,
-        width: 75,
-        beds: [{ name: "Souchet", quantity: 16 }],
-      },
-      {
-        name: "BR2",
-        length: 35,
-        width: 75,
-        beds: [{ name: "Souchet", quantity: 16 }],
-      },
-      {
-        name: "C1",
+        name: "Légumineuses",
         length: 2400,
         width: 25,
         beds: [{ name: "Caraganier", quantity: 16 }],
       },
       {
-        name: "J1",
+        name: "Herbacées",
+        length: 1150,
+        width: 90,
+        beds: [
+          { name: "Chou marin", quantity: 5 },
+          { name: "Rhubarbe", quantity: 11 },
+        ],
+      },
+      {
+        name: "Asparagacées",
+        length: 1120,
+        width: 120,
+        beds: [{ name: "Asperge", quantity: 16 }],
+      },
+      {
+        name: "Rosacées",
         length: 750,
         width: 75,
         beds: [{ name: "Fraise", quantity: 16 }],
       },
       {
-        name: "M1",
+        name: "Herbacées",
         length: 720,
         width: 125,
         beds: [
@@ -369,22 +334,25 @@ export const plotSlice = createSlice({
         ],
       },
       {
-        name: "M2",
-        length: 720,
-        width: 125,
-        beds: [{ name: "Asperge", quantity: 16 }],
+        name: "Cypéracées",
+        length: 150,
+        width: 35,
+        beds: [{ name: "Souchet", quantity: 16 }],
       },
       {
-        name: "R1",
-        length: 1150,
-        width: 90,
-        beds: [
-          { name: "Chou marin", quantity: 5 },
-          { name: "Rhubarbe", quantity: 11 },
-        ],
+        name: "Liliacées",
+        length: 120,
+        width: 30,
+        beds: [{ name: "Ciboulette", quantity: 16 }],
       },
       {
-        name: "C2",
+        name: "Lamiacées",
+        length: 75,
+        width: 17.5,
+        beds: [{ name: "Thym", quantity: 16 }],
+      },
+      {
+        name: "Liliacées et Herbacées",
         length: 150,
         width: 750,
         beds: [
